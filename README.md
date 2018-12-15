@@ -1,5 +1,5 @@
 # MSS54-XDFs
-MSS54 and MSS54HP XDFs 
+MSS54 and MSS54HP XDFs to be used with TunerPro @ http://www.tunerpro.net/
 
 General disclaimer:
 
