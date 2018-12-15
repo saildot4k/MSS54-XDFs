@@ -1,5 +1,10 @@
 # MSS54-XDFs
 MSS54 and MSS54HP XDFs to be used with TunerPro @ http://www.tunerpro.net/
+Use http://bimmersoftware.com/bmwflash or http://www.msstuning.com/mssflasher.html to download and upload your .bins to your MSS54/HP
+Information here is vital the usage of this:
+http://www.m3forum.net/m3forum/forumdisplay.php?f=109
+Also please read the DIY DME Modification.pdf which explains which cables and modifications are necessary.
+
 
 General disclaimer:
 
