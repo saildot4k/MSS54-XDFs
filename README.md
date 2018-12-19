@@ -7,7 +7,7 @@ Information here is vital the usage of this:
 
 http://www.m3forum.net/m3forum/forumdisplay.php?f=109
 
-Also please read the DIY DME Modification.pdf which explains which cables and modifications are necessary.
+Also please read the DIY DME Modification.pdf which explains finding your version and which cables and modifications are necessary.
 
 
 General disclaimer:
