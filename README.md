@@ -16,7 +16,7 @@ WARNING: These definition files are created as the result of the extremely compl
 
 Tips:
 
- - the most basic items are on lvl 1 
+ - the most basic items are on lvl 1 with English best guess translations
  - the most advanced are on lvl 5 
  - level 10 has the same items as 1-5 but with BMW titles
   
