@@ -22,7 +22,7 @@ Tips:
   
   In the description of each item you will find some information about the validity of the search results.
   
-   NearbyBlockMatch: 20   % This means that there are 20/20 nearby items that moved together in a block.  This means that it is very likely that this item is correct
+    NearbyBlockMatch: 20   % This means that there are 20/20 nearby items that moved together in a block.  This means that it is very likely that this item is correct
     Matched Length: 7      % This is the length of the search that resulted in the find of this address
     MatchRatio: 1.00       % Ratio of data value matches to a2l data - 1.00 means all data matches a2l
     HasDuplicate?: No      % This tells you weather another item was found to be at this address as well. - only one can be correct.
