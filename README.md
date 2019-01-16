@@ -40,8 +40,7 @@ Units- "-"
 Function: Lambda  SizeChange: 0 
 
 
-
- K - constants, ie bit switches, flags, etc
- KL - Kennlinnie - dataline, for example the linearisation curves for sensors
- KF - Kennfeld - Map table
- The format usually sticks to type_datacontent_axis_axis so KF_TI_N_RF is map:injection:rpm:relative filling
+  K - constants, ie bit switches, flags, etc
+  KL - Kennlinnie - dataline, for example the linearisation curves for sensors
+  KF - Kennfeld - Map table
+  The format usually sticks to type_datacontent_axis_axis so KF_TI_N_RF is map:injection:rpm:relative filling
