@@ -40,6 +40,7 @@ Units- "-"
 Function: Lambda  SizeChange: 0 
 
 
+
  K - constants, ie bit switches, flags, etc
  KL - Kennlinnie - dataline, for example the linearisation curves for sensors
  KF - Kennfeld - Map table
