@@ -17,32 +17,32 @@ WARNING: These definition files are created as the result of the extremely compl
  Tips:
 
  - the most basic items are on lvl 1 with English best guess translations
- - the most advanced are on lvl 5 
+ - the most advanced are on lvl 5
  - level 10 has the same items as 1-5 but with BMW titles
-  
-  In the description of each item you will find some information about the validity of the search results.
-  
-    NearbyBlockMatch: 20   % This means that there are 20/20 nearby items that moved together in a block.  This means that it is very likely that this item is correct
-    Matched Length: 7      % This is the length of the search that resulted in the find of this address
-    MatchRatio: 1.00       % Ratio of data value matches to a2l data - 1.00 means all data matches a2l
-    HasDuplicate?: No      % This tells you weather another item was found to be at this address as well. - only one can be correct.
-    BlockFound: 0          % 1: This variable was found using block tactics 0: found using search tactics only.
 
-```
+```  
+In the description of each item you will find some information about the validity of the search results.
+
+NearbyBlockMatch: 20   % This means that there are 20/20 nearby items that moved together in a block.  This means that it is very likely that this item is correct
+Matched Length: 7      % This is the length of the search that resulted in the find of this address
+MatchRatio: 1.00       % Ratio of data value matches to a2l data - 1.00 means all data matches a2l
+HasDuplicate?: No      % This tells you weather another item was found to be at this address as well. - only one can be correct.
+BlockFound: 0          % 1: This variable was found using block tactics 0: found using search tactics only.
+
 Example:
 K_LA_FMIN  309C
 HW:519 Version:211322001701J424
 Created by find routine V0.35
 BMWFlash/Galleto File Orientation [Slave Master]
 Matched Length: 7  MatchRatio: 1.00
-BlockFound: 0 NearbyBlockMatch: 20 Var: 830 HasDuplicate?: No 
+BlockFound: 0 NearbyBlockMatch: 20 Var: 830 HasDuplicate?: No
 Units- "-"  
-Function: Lambda  SizeChange: 0 
+Function: Lambda  SizeChange: 0
 ```
 
 ```
-  K - constants, ie bit switches, flags, etc
-  KL - Kennlinnie - dataline, for example the linearization curves for sensors
-  KF - Kennfeld - Map table
-  The format usually sticks to type_datacontent_axis_axis so KF_TI_N_RF is map:injection:rpm:relative filling
+K - constants, ie bit switches, flags, etc
+KL - Kennlinnie - dataline, for example the linearization curves for sensors
+KF - Kennfeld - Map table
+The format usually sticks to type_datacontent_axis_axis so KF_TI_N_RF is map:injection:rpm:relative filling
   ```
