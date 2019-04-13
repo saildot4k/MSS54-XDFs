@@ -48,8 +48,8 @@ The format usually sticks to type_datacontent_axis_axis so KF_TI_N_RF is map:inj
   ```
 
 ```
-  EWS Delete not included in XDFs. 
-  To delete, use your hex editor of choice and search for: 64 00 5A 00 00
-  Change the second byte to a non 00 value IE:             64 FF 5A 00 00
-  The BYTE to change is located at 0x60 for MSS54 and 0x8A for MSS54HP
+EWS Delete not included in XDFs. 
+To delete, use your hex editor of choice and search for: 64 00 5A 00 00
+Change the second byte to a non 00 value IE:             64 FF 5A 00 00
+The BYTE to change is located at 0x60 for MSS54 and 0x8A for MSS54HP
    ``` 
