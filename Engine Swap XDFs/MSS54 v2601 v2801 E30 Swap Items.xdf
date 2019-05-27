@@ -1,0 +1,751 @@
+<!-- Written 12/23/2018 15:17:38 -->
+<XDFFORMAT version="1.60">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <deftitle>MSS54 v2801 E30 Swap Items</deftitle>
+    <description></description>
+    <author>Justin Ooms</author>
+    <BASEOFFSET offset="0" subtract="0" />
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x8000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+    <CATEGORY index="0x0" name="Software Version" />
+    <CATEGORY index="0xB" name="Anti-bucking (ANTIRUCKELFUNKTION)" />
+    <CATEGORY index="0xC" name="Aquer (AQUER)" />
+    <CATEGORY index="0xD" name="Misfire code/detection (Aussetzerkennung)" />
+    <CATEGORY index="0xE" name="BA (BA)" />
+    <CATEGORY index="0xF" name="Operating states (Betriebszustaende)" />
+    <CATEGORY index="0x10" name="CAN bus interface/control (CAN_Schnittstelle)" />
+    <CATEGORY index="0x11" name="CAN bus interface/control slave (CAN_Schnittstelle-Slave)" />
+    <CATEGORY index="0x12" name="Digital/Analog conversion/configuration (D/A_Konfiguration)" />
+    <CATEGORY index="0x13" name="Contains Alpha-N map (DKBA)" />
+    <CATEGORY index="0x14" name="Speed ??warning field (Drehzahlwarnfeld)" />
+    <CATEGORY index="0x15" name="Accumulator valve (Druckspeicherventil)" />
+    <CATEGORY index="0x16" name="Dynamics (Dynamik)" />
+    <CATEGORY index="0x17" name="Throttle Body (EDK)" />
+    <CATEGORY index="0x18" name="EDK actual (EDK_Soll_Ist)" />
+    <CATEGORY index="0x19" name="Electronic Throttle system (EGAS)" />
+    <CATEGORY index="0x1A" name="Self-diagnosis (Eigendiagnose)" />
+    <CATEGORY index="0x1B" name="Injection (Einspritzung)" />
+    <CATEGORY index="0x1C" name="Electric Fan (Elektroluefter)" />
+    <CATEGORY index="0x1D" name="Cruise Control (FGR)" />
+    <CATEGORY index="0x1E" name="Combustion controller (adapt values) (FUELLUNGSREGLER)" />
+    <CATEGORY index="0x1F" name="Error filter OBD (Fehlerfilter Kontrolle)" />
+    <CATEGORY index="0x20" name="Vehicle speed (Fz_Geschwindigkeit)" />
+    <CATEGORY index="0x21" name="Gear Recognition/Detection (Gangerkennung)" />
+    <CATEGORY index="0x22" name="Catalytic heater function (Katheiz_Funktion)" />
+    <CATEGORY index="0x23" name="Catalytic protection (Katschutz)" />
+    <CATEGORY index="0x24" name="Air conditioning (Klimaanlage)" />
+    <CATEGORY index="0x25" name="Knock (Klopfen)" />
+    <CATEGORY index="0x26" name="Fuel pump (Kraftstoffpumpe)" />
+    <CATEGORY index="0x27" name="Idle control (LEERLAUFREGLER)" />
+    <CATEGORY index="0x28" name="Lambda (Lambda)" />
+    <CATEGORY index="0x29" name="Lambda OBD (Lambda-OBD)" />
+    <CATEGORY index="0x2A" name="Lambda diagnosis (Lambdadiagnose)" />
+    <CATEGORY index="0x2B" name="Lambda probe heating (Lamdasondenheizung)" />
+    <CATEGORY index="0x2C" name="Load detection (Lasterfassung)" />
+    <CATEGORY index="0x2D" name="Rough running (Laufunruhe)" />
+    <CATEGORY index="0x2E" name="Idle Synchronization (LeerLaufSYNChornisation)" />
+    <CATEGORY index="0x2F" name="Idle Speed Control (Leerlaufregelung)" />
+    <CATEGORY index="0x30" name="Idle Adjuster (Leerlaufsteller)" />
+    <CATEGORY index="0x31" name="Observations (Messwerte)" />
+    <CATEGORY index="0x32" name="Torque Manager (Momentenmanager)" />
+    <CATEGORY index="0x33" name="Miscellaneous (NO_FUNCTION)" />
+    <CATEGORY index="0x34" name="OEK (OEK)" />
+    <CATEGORY index="0x35" name="Oil level sensor/readings (Oelniveaugeber)" />
+    <CATEGORY index="0x36" name="PDR (PDR)" />
+    <CATEGORY index="0x37" name="Relative opening cross (Relativer_Oeffnungsquerschnitt)" />
+    <CATEGORY index="0x38" name="Temperature functions (SA_WE)" />
+    <CATEGORY index="0x39" name="SK-Momentenmanager (SK-Momentenmanager)" />
+    <CATEGORY index="0x3A" name="SK_FGR (SK_FGR)" />
+    <CATEGORY index="0x3B" name="Eductor (Saugstrahlpumpe)" />
+    <CATEGORY index="0x3C" name="Rough road detection (Schlechtweg-Erkennung)" />
+    <CATEGORY index="0x3D" name="Secondary air system (Sekundaerluftsystem)" />
+    <CATEGORY index="0x3E" name="Servotronic adjustable steering ratio system (non-M3) (Servotronic)" />
+    <CATEGORY index="0x3F" name="Security concept (Sicherheitskonzept)" />
+    <CATEGORY index="0x40" name="Starter relay (Startrelais)" />
+    <CATEGORY index="0x41" name="System control (System_Kontrolle)" />
+    <CATEGORY index="0x42" name="TPU synchronization (TPU_Synchronisation)" />
+    <CATEGORY index="0x43" name="Tank vent or Evaporator canister purge control (Tankentlueftung)" />
+    <CATEGORY index="0x44" name="Tank leak diagnosis (Tankleckdiagnose)" />
+    <CATEGORY index="0x45" name="Vanos (Vanos)" />
+    <CATEGORY index="0x46" name="Version control (Versionskontrolle)" />
+    <CATEGORY index="0x47" name="Ignition (Zuendung)" />
+    <CATEGORY index="0x48" name="Smg (smg)" />
+    <CATEGORY index="0x4A" name="Headings" />
+    <CATEGORY index="0x4B" name="DTC" />
+  </XDFHEADER>
+  <XDFCONSTANT uniqueid="0x59E" vislevel="1">
+    <title>Sport Mode_MEMORY</title>
+    <description>K_FDYN_CONTROL&#013;&#010;0 1 S_FDYN vom DSC&#013;&#010;1 1 S_FDYN = Sport&#013;&#010;2 1 S_FDYN = Komfort&#013;&#010;3 1 S_FDYN vom Taster &#013;&#010;4 1 S_FDYN Taster vorher</description>
+    <CATEGORYMEM index="2" category="66" />
+    <EMBEDDEDDATA mmedaddress="0x4024" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;-&quot;</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFPATCH uniqueid="0x9C">
+    <title>EWS</title>
+    <CATEGORYMEM index="0" category="66" />
+    <XDFPATCHENTRY name="EWS" address="0x5F" datasize="0x5" patchdata="64FF5A0000" basedata="64005A0000" />
+  </XDFPATCH>
+  <XDFCONSTANT uniqueid="0x6AAC" vislevel="1">
+    <title>Gearbox Type Configuration Master</title>
+    <description>cfg_m.getriebetyp&#013;&#010;3 Manual&#013;&#010;40 SMG</description>
+    <CATEGORYMEM index="0" category="66" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x4008" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;-&quot;</units>
+    <outputtype>3</outputtype>
+    <rangehigh>127.000000</rangehigh>
+    <rangelow>-128.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x37E3" vislevel="1">
+    <title>Gearbox Type Configuration Slave</title>
+    <description>cfg_s.getriebetyp&#013;&#010;3 Manual&#013;&#010;40 SMG&#013;&#010;</description>
+    <CATEGORYMEM index="0" category="66" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x08" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;-&quot;</units>
+    <outputtype>3</outputtype>
+    <rangehigh>127.000000</rangehigh>
+    <rangelow>-128.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x3C6C">
+    <title>Chassis coding configuration Master</title>
+    <description>cfg_m.Baureihe&#013;&#010;Chassis coding configuration&#013;&#010;$08  E36 &#013;&#010;$10  E39 &#013;&#010;$20  E46 &#013;&#010;$40  E52 &#013;&#010;$80  E59 &#013;&#010;ELSE  undefiniert</description>
+    <CATEGORYMEM index="0" category="66" />
+    <EMBEDDEDDATA mmedaddress="0x4006" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0xBA0">
+    <title>Chassis coding configuration Slave</title>
+    <description>cfg_s.Baureihe&#013;&#010;Chassis coding configuration&#013;&#010;$08  E36 &#013;&#010;$10  E39 &#013;&#010;$20  E46 &#013;&#010;$40  E52 &#013;&#010;$80  E59 &#013;&#010;ELSE  undefiniert</description>
+    <CATEGORYMEM index="0" category="66" />
+    <EMBEDDEDDATA mmedaddress="0x06" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" flags="0x4" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7617">
+    <title>Speedometer Calibration</title>
+    <description>K_V_WEGIMPULSZAHL&#013;&#010;&#013;&#010;Calculation: Pulses/KM&#013;&#010;E30 9 Pulses/Rotation&#013;&#010;&#013;&#010;</description>
+    <CATEGORYMEM index="0" category="33" />
+    <EMBEDDEDDATA mmedaddress="0x5FCA" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x362A">
+    <title>Speedometor Source</title>
+    <description>K_V_CONTROL (Speedo Source)&#013;&#010; 0 Direct to ECU&#013;&#010; 2 E46 Default Wiring&#013;&#010;&#013;&#010;</description>
+    <CATEGORYMEM index="0" category="66" />
+    <EMBEDDEDDATA mmedaddress="0x5FD8" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x360">
+    <title>Cruise Control Sensors</title>
+    <description>K_SKRAFTS_CONTROL&#013;&#010;0=by vehicle speed&#013;&#010;1=by gear&#013;&#010;2=by Clutch</description>
+    <CATEGORYMEM index="0" category="66" />
+    <EMBEDDEDDATA mmedaddress="0x4028" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x8E8">
+    <title>Cruise Control Buttons</title>
+    <description>K_FGR_CONFIG&#013;&#010;&#013;&#010;Values not known, research indicates values 00-03&#013;&#010;03 Stock.&#013;&#010;00? for Z3 module in E30 according to:&#013;&#010;https://www.tapatalk.com/topic/541570-6222</description>
+    <CATEGORYMEM index="0" category="66" />
+    <EMBEDDEDDATA mmedaddress="0x4294" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x492C">
+    <title>Brake Light Switch-Cruise Control</title>
+    <description> K_S_BLS_CFG&#013;&#010;&#013;&#010;0 &quot;BLS+BLTS+DSC&quot;&#013;&#010;1 &quot;BLS+DSC&quot;&#013;&#010;2 &quot;BLS+BLTS&quot;&#013;&#010;3 &quot;BLS&quot;&#013;&#010;&#013;&#010;BLS: Brake Light Switch&#013;&#010;BLTS: Brake Light Test Switch&#013;&#010;&#013;&#010;E30 2 Pole only BLS&#013;&#010;E36 4 Pole BLS and BLTS</description>
+    <CATEGORYMEM index="0" category="66" />
+    <EMBEDDEDDATA mmedaddress="0x5FE2" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x3599">
+    <title>Gear Position Sensor</title>
+    <description>K_MD_MIN_VERH_KRAFTS&#013;&#010;-Modification : A0&#013;&#010;-Stock: 80</description>
+    <CATEGORYMEM index="0" category="66" />
+    <EMBEDDEDDATA mmedaddress="0x67E0" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x25E9" vislevel="1">
+    <title>Operational Mode_DYNO Master</title>
+    <description>cfg_m.betriebsmode&#013;&#010;0  Fz-Betrieb :&#013;&#010;01  Pruefstand&#013;&#010;02  Rolle</description>
+    <CATEGORYMEM index="0" category="52" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x4011" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;-&quot;</units>
+    <outputtype>2</outputtype>
+    <rangehigh>127.000000</rangehigh>
+    <rangelow>-128.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x6137" vislevel="1">
+    <title>Operational Mode_DYNO Slave</title>
+    <description>cfg_s.betriebsmode&#013;&#010;0  Fz-Betrieb&#013;&#010;01  Pruefstand&#013;&#010;02  Rolle</description>
+    <CATEGORYMEM index="0" category="52" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x11" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;-&quot;</units>
+    <outputtype>2</outputtype>
+    <rangehigh>127.000000</rangehigh>
+    <rangelow>-128.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x204B" vislevel="1">
+    <title>Engine Speed_DYNO LIMITER</title>
+    <description>K_N_MAX_VFEHLER</description>
+    <CATEGORYMEM index="2" category="28" />
+    <EMBEDDEDDATA mmedaddress="0x76" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;Upm&quot;</units>
+    <rangehigh>10000.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x45AA" vislevel="1">
+    <title>Engine Speed_MAX RPM LIMIT</title>
+    <description>K_N_TBEGR</description>
+    <CATEGORYMEM index="0" category="52" />
+    <EMBEDDEDDATA mmedaddress="0x5CE2" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;Upm&quot;</units>
+    <rangehigh>10000.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7951" vislevel="5">
+    <title>Automatic Stability Control_TORQUE</title>
+    <description>K_MD_ASC_CONTROL&#013;&#010;$0 1 ASC/MSR freigegeben :&#013;&#010;$1 1 ASC gesperrt :&#013;&#010;$2 1 MSR gesperrt :&#013;&#010;$3 1 ASC/MSR gesperrt&#013;&#010;</description>
+    <CATEGORYMEM index="2" category="51" />
+    <EMBEDDEDDATA mmedaddress="0x6DFB" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;-&quot;</units>
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFPATCH uniqueid="0x769A">
+    <title>Disable SAP/CAT Heating/DTC</title>
+    <CATEGORYMEM index="0" category="35" />
+    <XDFPATCHENTRY name="SAP" address="0x75D4" datasize="0x6" patchdata="00FF04B0B9B9" basedata="01FF04B05FAA" />
+    <XDFPATCHENTRY name="DTC" address="0x7BBE" datasize="0xE" patchdata="AA010101010101000102032800FF" basedata="AA010101010101000102032827FF" />
+  </XDFPATCH>
+  <XDFCONSTANT uniqueid="0x3C61">
+    <title>K_S_GANG_LL_ED</title>
+    <description>Disable Gear Position Switch&#013;&#010;&#013;&#010;Default 0032&#013;&#010;Disable FFFF</description>
+    <CATEGORYMEM index="2" category="34" />
+    <EMBEDDEDDATA mmedaddress="0x35DA" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x483E">
+    <title>Disable Rear O2 Sensors</title>
+    <description>K_LA_FREIGABE&#013;&#010;Bit Order 76543210&#013;&#010;Stock FF: 11111111&#013;&#010;Disabled E7: 11100111&#013;&#010;&#013;&#010;BIT 0 - unused&#013;&#010;BIT 1 - precat bank1&#013;&#010;BIT 2 - precat bank2&#013;&#010;BIT 3 - postcat bank1&#013;&#010;BIT 4 - postcat bank2&#013;&#010;BIT 5 - multiplicative adaptation enabled&#013;&#010;BIT 6 - additive adaptation enabled&#013;&#010;BIT 7 - unused</description>
+    <CATEGORYMEM index="0" category="41" />
+    <EMBEDDEDDATA mmedaddress="0x304E" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x41A7">
+    <title>Disable Rear O2 ODB Reporting</title>
+    <description>K_LA_OBD_FREIGABE&#013;&#010;Bit Order 7654321&#013;&#010;Stock C6&#013;&#010;Disable C2&#013;&#010;&#013;&#010;BIT0: Duty Cycle Monitoring&#013;&#010;BIT1: Cycle Duration&#013;&#010;BIT2: Post-Cat Sensor Diagnosis&#013;&#010;BIT3: Trimming Control - Bank 1&#013;&#010;BIT4: Trimming Control - Bank 2&#013;&#010;BIT5: ----&#013;&#010;BIT6: Cat Conversion&#013;&#010;BIT7: Jump Time Monitoring</description>
+    <CATEGORYMEM index="0" category="41" />
+    <EMBEDDEDDATA mmedaddress="0x338A" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7F3B" vislevel="10">
+    <title>K_S_GANG1_NV_MIN</title>
+    <description>K_S_GANG1_NV_MIN</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35DE" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>32767.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5D5C" vislevel="10">
+    <title>K_S_GANG1_NV_MAX</title>
+    <description>K_S_GANG1_NV_MAX</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35E0" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>32767.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x219E" vislevel="10">
+    <title>K_S_GANG2_NV_MIN</title>
+    <description>K_S_GANG2_NV_MIN</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35E2" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x72D0" vislevel="10">
+    <title>K_S_GANG2_NV_MAX</title>
+    <description>K_S_GANG2_NV_MAX</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35E3" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x2EE8" vislevel="10">
+    <title>K_S_GANG3_NV_MIN</title>
+    <description>K_S_GANG3_NV_MIN</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35E4" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x6E65" vislevel="10">
+    <title>K_S_GANG3_NV_MAX</title>
+    <description>K_S_GANG3_NV_MAX</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35E5" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x2A48" vislevel="10">
+    <title>K_S_GANG4_NV_MIN</title>
+    <description>K_S_GANG4_NV_MIN</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35E6" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x217D" vislevel="10">
+    <title>K_S_GANG4_NV_MAX</title>
+    <description>K_S_GANG4_NV_MAX</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35E7" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x707D" vislevel="10">
+    <title>K_S_GANG5_NV_MIN</title>
+    <description>K_S_GANG5_NV_MIN</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35E8" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x46ED" vislevel="10">
+    <title>K_S_GANG5_NV_MAX</title>
+    <description>K_S_GANG5_NV_MAX</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35E9" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5985" vislevel="10">
+    <title>K_S_GANG6_NV_MIN</title>
+    <description>K_S_GANG6_NV_MIN</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35EA" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x1F90" vislevel="10">
+    <title>K_S_GANG6_NV_MAX</title>
+    <description>K_S_GANG6_NV_MAX</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35EB" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x6FF4" vislevel="10">
+    <title>K_S_GANG7_NV_MIN</title>
+    <description>K_S_GANG7_NV_MIN</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35EC" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5E34" vislevel="10">
+    <title>K_S_GANG7_NV_MAX</title>
+    <description>K_S_GANG7_NV_MAX</description>
+    <CATEGORYMEM index="2" category="50" />
+    <EMBEDDEDDATA mmedaddress="0x35ED" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x1E47" vislevel="10">
+    <title>K_GANG_GRENZE1_2</title>
+    <description>K_GANG_GRENZE1_2</description>
+    <CATEGORYMEM index="2" category="34" />
+    <EMBEDDEDDATA mmedaddress="0x7650" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5CF6" vislevel="10">
+    <title>K_GANG_GRENZE2_3</title>
+    <description>K_GANG_GRENZE2_3</description>
+    <CATEGORYMEM index="2" category="34" />
+    <EMBEDDEDDATA mmedaddress="0x7651" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x1646" vislevel="10">
+    <title>K_GANG_GRENZE3_4</title>
+    <description>K_GANG_GRENZE3_4</description>
+    <CATEGORYMEM index="2" category="34" />
+    <EMBEDDEDDATA mmedaddress="0x7652" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x545C" vislevel="10">
+    <title>K_GANG_GRENZE4_5</title>
+    <description>K_GANG_GRENZE4_5</description>
+    <CATEGORYMEM index="2" category="34" />
+    <EMBEDDEDDATA mmedaddress="0x7653" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x10DD" vislevel="10">
+    <title>K_GANG_GRENZE5_6</title>
+    <description>K_GANG_GRENZE5_6</description>
+    <CATEGORYMEM index="2" category="34" />
+    <EMBEDDEDDATA mmedaddress="0x7654" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;U/kmh&quot;</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>127.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x/2">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x182E">
+    <title>K_LDPH_CFG</title>
+    <description>TXTEQ(x::$0 -1 Ohne LDPH :$1 1 LDPH ab Werk :$2 1 LDPH Nachruest:$3 1 LDPH immer ein :ELSE 3 undef. )&#013;&#010;&#013;&#010;Default 3&#013;&#010;Euro 0</description>
+    <CATEGORYMEM index="2" category="69" />
+    <EMBEDDEDDATA mmedaddress="0x7538" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x33C9">
+    <title>K_LDP_CFG</title>
+    <description>TXTEQ(x::$0 -1 Ohne LDP :$1 1 Mit LDP :$2 1 Keine Fehlerheilung :ELSE 3 undef. )&#013;&#010;&#013;&#010;Default 2&#013;&#010;Euro 0</description>
+    <CATEGORYMEM index="2" category="69" />
+    <EMBEDDEDDATA mmedaddress="0x2E32" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x49CC" flags="0x0">
+    <title>Software Version</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x7FB8" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <outputtype>4</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7FB8" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>4</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x68E8" flags="0x30">
+    <title>Throttle Curves</title>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4176" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>10</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X/10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedcolcount="2" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>2</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="Sport" />
+      <LABEL index="1" value="Comfort" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x418A" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="192" />
+      <units>Throttle %</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>100.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X/10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x41F6">
+    <title>K_SSP_CONTROL</title>
+    <description>K_SSP_CONTROL &#013;&#010;Eductor Pump Transfer Fuel from one side to the other&#013;&#010;&#013;&#010;Stock: 00&#013;&#010;Modification: 03&#013;&#010;&#013;&#010;00: Function On&#013;&#010;01: Drivers On&#013;&#010;02: Drivers Off&#013;&#010;03: No SSP Installed</description>
+    <CATEGORYMEM index="0" category="60" />
+    <EMBEDDEDDATA mmedaddress="0x762A" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+</XDFFORMAT>
