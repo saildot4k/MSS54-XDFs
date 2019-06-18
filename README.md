@@ -54,7 +54,6 @@ KF - Kennfeld - Map table
 The format usually sticks to type_datacontent_axis_axis so KF_TI_N_RF is map:injection:rpm:relative filling
   ```
    
-```
 | **Abbreviation** | **Function (German)** | **Function (Common English)** |
 | --- | --- | --- |
 | AR | ANTIRUCKELFUNKTION | Anti-bucking |
@@ -117,4 +116,3 @@ The format usually sticks to type_datacontent_axis_axis so KF_TI_N_RF is map:inj
 | ?? | Versionskontrolle | version control |
 | TZ | Zuendung | ignition |
 | SMG | smg | smg |
-   ``` 
