@@ -19,6 +19,13 @@ WARNING: These definition files are created as the result of the extremely compl
  - the most basic items are on lvl 1 with English best guess translations
  - the most advanced are on lvl 5
  - level 10 has the same items as 1-5 but with BMW titles
+ 
+ ```
+**EWS Delete not included in XDFs.**
+To delete, use your hex editor of choice and search for: 64 00 5A 00 00
+Change the second byte to a non 00 value IE:             64 FF 5A 00 00
+The BYTE to change is located at 0x60 for MSS54 and 0x8A for MSS54HP
+   ``` 
 
 ```  
 In the description of each item you will find some information about the validity of the search results.
@@ -46,16 +53,9 @@ KL - Kennlinnie - dataline, for example the linearization curves for sensors
 KF - Kennfeld - Map table
 The format usually sticks to type_datacontent_axis_axis so KF_TI_N_RF is map:injection:rpm:relative filling
   ```
-
-```
-EWS Delete not included in XDFs. 
-To delete, use your hex editor of choice and search for: 64 00 5A 00 00
-Change the second byte to a non 00 value IE:             64 FF 5A 00 00
-The BYTE to change is located at 0x60 for MSS54 and 0x8A for MSS54HP
-   ``` 
    
 ```
-| Abbreviation | Function (German) | Function (Common English) |
+| **Abbreviation** | **Function (German)** | **Function (Common English)** |
 | --- | --- | --- |
 | AR | ANTIRUCKELFUNKTION | Anti-bucking |
 | AQ | AQUER | aquer |
