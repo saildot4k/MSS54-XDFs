@@ -20,12 +20,10 @@ WARNING: These definition files are created as the result of the extremely compl
  - the most advanced are on lvl 5
  - level 10 has the same items as 1-5 but with BMW titles
  
- ```
 **EWS Delete not included in XDFs.**
 To delete, use your hex editor of choice and search for: 64 00 5A 00 00
 Change the second byte to a non 00 value IE:             64 FF 5A 00 00
 The BYTE to change is located at 0x60 for MSS54 and 0x8A for MSS54HP
-   ``` 
 
 ```  
 In the description of each item you will find some information about the validity of the search results.
