@@ -53,3 +53,68 @@ To delete, use your hex editor of choice and search for: 64 00 5A 00 00
 Change the second byte to a non 00 value IE:             64 FF 5A 00 00
 The BYTE to change is located at 0x60 for MSS54 and 0x8A for MSS54HP
    ``` 
+   
+```
+| Abbreviation | Function (German) | Function (Common English) |
+| --- | --- | --- |
+| AR | ANTIRUCKELFUNKTION | Anti-bucking |
+| AQ | AQUER | aquer |
+| AUSS | Aussetzerkennung | Misfire code/detection |
+| BA | BA | ?? |
+| BZ | Betriebszustaende | Operating states |
+| CAN | CAN_Schnittstelle | CAN bus interface/control |
+| CAN | CAN_Schnittstelle-Slave | CAN bus interface/control slave |
+| DA | D/A_Konfiguration | Digital/Analog conversion/configuration |
+| DKBA | DKBA | Contains Alpha-N map |
+| DWF | Drehzahlwarnfeld | Speed warning field |
+| DSV | Druckspeicherventil | Accumulator valve |
+| DYN | Dynamik | dynamics |
+| EDK | EDK | Throttle Body |
+| EDISI | EDK_Soll_Ist | EDK actual |
+| EGAS | EGAS | Electronic Throttle system |
+| ?? | Eigendiagnose | self-diagnosis |
+| TI | Einspritzung | injection |
+| ELU | Elektroluefter | electric fan |
+| FGR | FGR | Cruise Control |
+| FR | FUELLUNGSREGLER | Combustion controller (adapt values) |
+| ?? | Fehlerfilter Kontrolle | error filter |
+| VDIAG | Fz_Geschwindigkeit | Vehicle speed |
+| GANG | Gangerkennung | Gear Recognition/Detection |
+| KATH | Katheiz_Funktion | Catalytic heater function |
+| KATS | Katschutz | Catalytic protection |
+| KKOS | Klimaanlage | air conditioning |
+| KM | Klopfen | knock |
+| EKP | Kraftstoffpumpe | Fuel pump |
+| LLR | LEERLAUFREGLER | Idle control |
+| ?? | Lambda | lambda |
+| ?? | Lambda-OBD | Lambda OBD |
+| ?? | Lambdadiagnose | lambda diagnosis |
+| ?? | Lamdasondenheizung | Lambda probe heating |
+| HFM | Lasterfassung | load detection |
+| LU | Laufunruhe | rough running |
+| LL | LeerLaufSYNChornisation | Idle synchronization |
+| LFR | Leerlaufregelung | Idle speed control |
+| LLS | Leerlaufsteller | Idle adjuster |
+| ?? | Messwerte | Observations |
+| MD | Momentenmanager | Moment Manager |
+| NO_FUNCTION | NO_FUNCTION | Miscellaneous |
+| OEK | OEK | ?? |
+| TOG | Oelniveaugeber | Oil level sensor/readings |
+| PDR | PDR | varies with time (?) |
+| ?? | Relativer_Oeffnungsquerschnitt | relative opening cross |
+| SA_WE | SA_WE | Temperature functions |
+| SSP | Saugstrahlpumpe | eductor |
+| SWE | Schlechtweg-Erkennung | rough road detection |
+| SLS, SLP, SLV | Sekundaerluftsystem | Secondary air system |
+| SERVO | Servotronic | Servotronic adjustable steering ratio system (non-M3) |
+| SK | Sicherheitskonzept | Security concept |
+| START | Startrelais | Starter relay |
+| ?? | System_Kontrolle | System control |
+| TW | TPU_Synchronisation | TPU synchronization |
+| TE, TEA | Tankentlueftung | Tank vent or Evaporator canister purge control |
+| LDP | Tankleckdiagnose | Tank leak diagnosis |
+| EVAN, AVAN | Vanos | vanos |
+| ?? | Versionskontrolle | version control |
+| TZ | Zuendung | ignition |
+| SMG | smg | smg |
+   ``` 
