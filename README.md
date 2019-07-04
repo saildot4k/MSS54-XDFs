@@ -1,14 +1,13 @@
-To Download: Github only supports downloading the whole repository @ 
-https://github.com/saildot4k/MSS54-XDFs/archive/master.zip
-
 # MSS54-XDFs
 MSS54 and MSS54HP XDFs to be used with TunerPro @ http://www.tunerpro.net/
 
 Use http://bimmersoftware.com/bmwflash or http://www.msstuning.com/mssflasher.html to download and upload your .bins to your MSS54/HP.
 
 The link below to m3forum is vital to the usage of these tunerpro files:
-
 http://www.m3forum.net/m3forum/forumdisplay.php?f=109
+
+To Download: Github only supports downloading the whole repository @ 
+https://github.com/saildot4k/MSS54-XDFs/archive/master.zip
 
 Also please read the DIY DME Modification.pdf which explains finding your version and which cables and modifications are necessary.
 
