@@ -1,3 +1,6 @@
+# Github only supports downloading the whole repository @ 
+https://github.com/saildot4k/MSS54-XDFs/archive/master.zip
+
 # MSS54-XDFs
 MSS54 and MSS54HP XDFs to be used with TunerPro @ http://www.tunerpro.net/
 
