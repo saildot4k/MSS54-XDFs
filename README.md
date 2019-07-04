@@ -1,5 +1,5 @@
 # MSS54-XDFs
-MSS54 and MSS54HP XDFs to be used with TunerPro @ [TunerPro](http://www.tunerpro.net/)
+MSS54 and MSS54HP XDFs to be used with [TunerPro](http://www.tunerpro.net/)
 
 Use [BMW FLASH](http://bimmersoftware.com/bmwflash) or [MSS Flasher](http://www.msstuning.com/mssflasher.html) to download and upload your .bins to your MSS54/HP.
 
