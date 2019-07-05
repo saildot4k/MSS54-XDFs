@@ -111,7 +111,7 @@ The format usually sticks to type_datacontent_axis_axis so KF_TI_N_RF is map:inj
 | TW | TPU_Synchronisation | TPU synchronization |
 | TE, TEA | Tankentlueftung | Tank vent or Evaporator canister purge control |
 | LDP | Tankleckdiagnose | Tank leak diagnosis |
-| EVAN, AVAN | Vanos | vanos |
+| EVAN, AVAN | Vanos | EVAN: Intake Vanos, AVAN: Exhaust Vanos |
 | ?? | Versionskontrolle | version control |
 | TZ | Zuendung | ignition |
 | SMG | smg | smg |
