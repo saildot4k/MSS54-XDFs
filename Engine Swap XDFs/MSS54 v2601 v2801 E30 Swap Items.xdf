@@ -1,4 +1,4 @@
-<!-- Written 12/23/2018 15:17:38 -->
+<!-- Written 07/03/2019 18:55:02 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -80,6 +80,7 @@
     <CATEGORYMEM index="2" category="66" />
     <EMBEDDEDDATA mmedaddress="0x4024" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>&quot;-&quot;</units>
+    <outputtype>2</outputtype>
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
@@ -313,32 +314,6 @@
     <description>Disable Gear Position Switch&#013;&#010;&#013;&#010;Default 0032&#013;&#010;Disable FFFF</description>
     <CATEGORYMEM index="2" category="34" />
     <EMBEDDEDDATA mmedaddress="0x35DA" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <outputtype>3</outputtype>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x483E">
-    <title>Disable Rear O2 Sensors</title>
-    <description>K_LA_FREIGABE&#013;&#010;Bit Order 76543210&#013;&#010;Stock FF: 11111111&#013;&#010;Disabled E7: 11100111&#013;&#010;&#013;&#010;BIT 0 - unused&#013;&#010;BIT 1 - precat bank1&#013;&#010;BIT 2 - precat bank2&#013;&#010;BIT 3 - postcat bank1&#013;&#010;BIT 4 - postcat bank2&#013;&#010;BIT 5 - multiplicative adaptation enabled&#013;&#010;BIT 6 - additive adaptation enabled&#013;&#010;BIT 7 - unused</description>
-    <CATEGORYMEM index="0" category="41" />
-    <EMBEDDEDDATA mmedaddress="0x304E" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <outputtype>3</outputtype>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x41A7">
-    <title>Disable Rear O2 ODB Reporting</title>
-    <description>K_LA_OBD_FREIGABE&#013;&#010;Bit Order 7654321&#013;&#010;Stock C6&#013;&#010;Disable C2&#013;&#010;&#013;&#010;BIT0: Duty Cycle Monitoring&#013;&#010;BIT1: Cycle Duration&#013;&#010;BIT2: Post-Cat Sensor Diagnosis&#013;&#010;BIT3: Trimming Control - Bank 1&#013;&#010;BIT4: Trimming Control - Bank 2&#013;&#010;BIT5: ----&#013;&#010;BIT6: Cat Conversion&#013;&#010;BIT7: Jump Time Monitoring</description>
-    <CATEGORYMEM index="0" category="41" />
-    <EMBEDDEDDATA mmedaddress="0x338A" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <outputtype>3</outputtype>
     <datatype>0</datatype>
     <unittype>0</unittype>
@@ -637,6 +612,7 @@
     <description>TXTEQ(x::$0 -1 Ohne LDPH :$1 1 LDPH ab Werk :$2 1 LDPH Nachruest:$3 1 LDPH immer ein :ELSE 3 undef. )&#013;&#010;&#013;&#010;Default 3&#013;&#010;Euro 0</description>
     <CATEGORYMEM index="2" category="69" />
     <EMBEDDEDDATA mmedaddress="0x7538" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
@@ -649,6 +625,7 @@
     <description>TXTEQ(x::$0 -1 Ohne LDP :$1 1 Mit LDP :$2 1 Keine Fehlerheilung :ELSE 3 undef. )&#013;&#010;&#013;&#010;Default 2&#013;&#010;Euro 0</description>
     <CATEGORYMEM index="2" category="69" />
     <EMBEDDEDDATA mmedaddress="0x2E32" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
@@ -735,17 +712,4 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFCONSTANT uniqueid="0x41F6">
-    <title>K_SSP_CONTROL</title>
-    <description>K_SSP_CONTROL &#013;&#010;Eductor Pump Transfer Fuel from one side to the other&#013;&#010;&#013;&#010;Stock: 00&#013;&#010;Modification: 03&#013;&#010;&#013;&#010;00: Function On&#013;&#010;01: Drivers On&#013;&#010;02: Drivers Off&#013;&#010;03: No SSP Installed</description>
-    <CATEGORYMEM index="0" category="60" />
-    <EMBEDDEDDATA mmedaddress="0x762A" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <outputtype>3</outputtype>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
 </XDFFORMAT>
