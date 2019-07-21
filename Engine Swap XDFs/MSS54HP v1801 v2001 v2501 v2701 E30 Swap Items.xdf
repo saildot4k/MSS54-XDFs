@@ -1,4 +1,4 @@
-<!-- Written 07/01/2019 00:15:07 -->
+<!-- Written 07/20/2019 15:07:24 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -76,7 +76,7 @@
   </XDFHEADER>
   <XDFCONSTANT uniqueid="0xA72" vislevel="1">
     <title>Sport Mode_MEMORY</title>
-    <description>K_FDYN_CONTROL&#013;&#010;0 1 S_FDYN vom DSC&#013;&#010;1 1 S_FDYN = Sport&#013;&#010;2 1 S_FDYN = Komfort&#013;&#010;3 1 S_FDYN vom Taster&#013;&#010;4 1 S_FDYN Taster vorher</description>
+    <description>Sport Mode Memory&#013;&#010;K_FDYN_CONTROL&#013;&#010;&#013;&#010;Value: 00 - on (sport mode) with DSC; Starts in comfort mode, but essentially, if you press the sport mode button with it flashed with this value, it will NOT enable. It will ONLY enable if you disable the DSC. For those with M-Track mode, it will not turn on with M-Track! It will only enable with a full DSC disable. &#013;&#010;Value: 01 - always on; To clarify, it is indeed always on (sport mode). In fact, you simply can&apos;t turn it off (switch to comfort mode)&#013;&#010;Value: 02 - always off; It is always off (comfort mode), and you simply can&apos;t turn it on (switch to sport mode).&#013;&#010;Value: 03 - DEFAULT; off (comfort mode) when the car starts, subsequent on/o&#013;&#010;Value: 04 -  Memory, defaults to last setting used</description>
     <CATEGORYMEM index="2" category="66" />
     <EMBEDDEDDATA mmedaddress="0x8026" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>&quot;-&quot;</units>
@@ -179,7 +179,7 @@
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x70D7">
     <title>Speedometer Calibration</title>
-    <description>K_V_WEGIMPULSZAHL&#013;&#010;&#013;&#010;Calculation: Pulses/KM&#013;&#010;E30 9 Pulses/Rotation&#013;&#010;&#013;&#010;</description>
+    <description>K_V_WEGIMPULSZAHL&#013;&#010;&#013;&#010;Calculation: Pulses/KM&#013;&#010;E30 9 Pulses/ Tire Rotation&#013;&#010;Use Excel Spreadsheet&#013;&#010;&#013;&#010;</description>
     <CATEGORYMEM index="0" category="33" />
     <EMBEDDEDDATA mmedaddress="0xCD4C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <outputtype>2</outputtype>
@@ -231,7 +231,7 @@
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x1F90">
     <title>Brake Light Switch-Cruise Control</title>
-    <description> K_S_BLS_CFG&#013;&#010;&#013;&#010;0 &quot;BLS+BLTS+DSC&quot;&#013;&#010;1 &quot;BLS+DSC&quot;&#013;&#010;2 &quot;BLS+BLTS&quot;&#013;&#010;3 &quot;BLS&quot;&#013;&#010;&#013;&#010;BLS: Brake Light Switch&#013;&#010;BLTS: Brake Light Test Switch&#013;&#010;&#013;&#010;&#009;&#013;&#010;Model series E36/7 (Z3):&#013;&#010;&#013;&#010;The brake-light switch and the brake-light test switch connect to B+.&#013;&#010;&#013;&#010;Both signals are checked for plausibility.&#013;&#010;&#013;&#010;The following tables show (depending on the model series) how the status of the brake-light switch/brake-light test switch performs:&#013;&#010;&#013;&#010;&#013;&#010;&#013;&#010;Model series E36/7 (Z3)&#009;Brake pedal not operated&#009;Brake pedal operated&#013;&#010;Status, brake-light switch&#009;Open&#009;Closed&#013;&#010;Status of brake-light test switch&#009;Open&#009;Closed</description>
+    <description>K_S_BLS_CFG&#013;&#010;Reference Thread: https://www.r3vlimited.com/board/showthread.php?t=425797&#013;&#010;&#013;&#010;&#013;&#010;00 &quot;BLS+BLTS+DSC&quot;&#013;&#010;01 &quot;BLS+DSC&quot;&#013;&#010;02 &quot;BLS+BLTS&quot;&#013;&#010;03 &quot;BLS&quot;&#013;&#010;&#013;&#010;BLS: Brake Light Switch&#013;&#010;BLTS: Brake Light Test Switch&#013;&#010;&#013;&#010;E30 2 Pole only BLS&#013;&#010;E36 4 Pole BLS and BLTS</description>
     <CATEGORYMEM index="0" category="66" />
     <EMBEDDEDDATA mmedaddress="0xCD64" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <outputtype>2</outputtype>
@@ -390,7 +390,7 @@
   </XDFPATCH>
   <XDFCONSTANT uniqueid="0x7F74">
     <title>K_S_GANG_LL_ED</title>
-    <description>Disable Gear Position Switch&#013;&#010;&#013;&#010;Default 0032&#013;&#010;Disable FFFF</description>
+    <description>Disable Gear Position Switch for Cruise Control: doesn&apos;t throw error when idling and clutch is up&#013;&#010;&#013;&#010;Default 0032&#013;&#010;Disable FFFF</description>
     <CATEGORYMEM index="2" category="34" />
     <EMBEDDEDDATA mmedaddress="0x5952" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <outputtype>3</outputtype>
