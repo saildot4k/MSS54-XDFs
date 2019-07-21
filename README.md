@@ -7,7 +7,7 @@ The link below to m3forum is vital to the usage of these tunerpro files:
 
 [M3 Forum Comprehensive MSS54/HP Coding](http://www.m3forum.net/m3forum/forumdisplay.php?f=109)
 
-PLEASE READ the DIY DME Modification.pdf which explains finding your version and which cables and modifications are necessary.
+PLEASE READ the [DIY DME Modification.pdf](https://github.com/saildot4k/MSS54-XDFs/raw/master/DIY%20DME%20Modification.pdf) which explains finding your version and which cables and modifications are necessary.
 
 **To Download**: Github only supports downloading the whole repository:
 [Click Here for download](https://github.com/saildot4k/MSS54-XDFs/archive/master.zip)
