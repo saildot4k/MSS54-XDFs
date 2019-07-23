@@ -19,7 +19,7 @@ Table
 Function
 
 **XML Data to replace in source**
-For example:
-Data between <*XDFTABLE* uniqueid="0x*XX*" vislevel="*X*" flags="*X*x*X*"> <*XDFTable*>
-Data between <*XDFCONSTANT* uniqueid="0x*XX*" vislevel="*X*" flags="*X*x*X*"> <*XDFCONSTANT*>
-Data between <*XDFFUNCTION* uniqueid="0x*XX*" vislevel="*X*" flags="*X*x*X*"> <*XDFFUNCTION*>
+For example data between the <XDF Parameter> </XDF Parameter>
+<*XDFTABLE* uniqueid="0x*XX*" vislevel="*X*" flags="*X*x*X*"> **XML INFO** <*XDFTable*>
+<*XDFCONSTANT* uniqueid="0x*XX*" vislevel="*X*" flags="*X*x*X*"  **XML INFO** <*XDFCONSTANT*>
+<*XDFFUNCTION* uniqueid="0x*XX*" vislevel="*X*" flags="*X*x*X*"> **XML INFO** <*XDFFUNCTION*>
