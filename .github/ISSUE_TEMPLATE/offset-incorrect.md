@@ -2,7 +2,7 @@
 name: Offset Incorrect
 about: How to report which XDF and Parameter Offset to correct
 title: 'XDF XXXX: Parameter Offset Incorrect'
-labels: bug
+labels: Offset Incorrect
 assignees: ''
 
 ---
