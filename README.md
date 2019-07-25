@@ -3,6 +3,8 @@ MSS54 and MSS54HP XDFs to be used with [TunerPro](http://www.tunerpro.net/)
 
 Use [BMW FLASH](http://bimmersoftware.com/bmwflash) or [MSS Flasher](http://www.msstuning.com/mssflasher.html) to download and upload your .bins to your MSS54/HP.
 
+[ChipFile Browser](https://sourceforge.net/projects/chipfilebrowser/) Is another great tool that will modify a small amount of parameters, but also will inform you which version of the DME you have. IE: 21132300**1801**J424
+
 The link below to m3forum is vital to the usage of these tunerpro files:
 
 [M3 Forum Comprehensive MSS54/HP Coding](http://www.m3forum.net/m3forum/forumdisplay.php?f=109)
