@@ -1,4 +1,4 @@
-<!-- Written 05/26/2019 23:40:36 -->
+<!-- Written 07/29/2019 20:49:51 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -340,7 +340,7 @@
     <XDFPATCHENTRY name="67  VANOS Advance Valve- Inle" address="0x39CC" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x5726">
-    <title>68 SMG safety concept</title>
+    <title>68  SMG safety concept</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="3" />
     <XDFPATCHENTRY name="68 SMG safety concept" address="0x3EB8" datasize="0xE" patchdata="0000000000000000000000000000" />
@@ -707,7 +707,7 @@
     <XDFPATCHENTRY name="141  Tank Fill Level Implausi" address="0x785A" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x1072">
-    <title>142 System check, suction jet pump for brake boosting</title>
+    <title>142  System check, suction jet pump for brake boosting</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="3" />
     <XDFPATCHENTRY name="142 System check, suction jet" address="0x7868" datasize="0xE" patchdata="0000000000000000000000000000" />

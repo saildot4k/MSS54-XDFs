@@ -1,4 +1,4 @@
-<!-- Written 11/13/2018 21:34:17 -->
+<!-- Written 07/29/2019 20:56:14 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -289,7 +289,7 @@
     <XDFPATCHENTRY name="55  Ignition Coil- Cyl 7" address="0x6558" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x7C7F">
-    <title>56 Internal Index 96</title>
+    <title>56  Internal Index 96</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="56 Internal Index 96" address="0xE546" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
@@ -340,7 +340,7 @@
     <XDFPATCHENTRY name="67  VANOS Advance Valve- Inle" address="0x622C" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x5726">
-    <title>68 SMG safety concept</title>
+    <title>68  SMG safety concept</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="3" />
     <XDFPATCHENTRY name="68 SMG safety concept" address="0x6718" datasize="0xE" patchdata="0000000000000000000000000000" />
@@ -413,7 +413,7 @@
     <XDFPATCHENTRY name="81  Multifunction Steering Wh" address="0xE2FA" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x43A9">
-    <title>82 Activation, exhaust flap</title>
+    <title>82  Activation, exhaust flap</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="3" />
     <XDFPATCHENTRY name="82 Activation, exhaust flap" address="0xE3DA" datasize="0xE" patchdata="0000000000000000000000000000" />
@@ -478,7 +478,7 @@
     <XDFPATCHENTRY name="93  Lambda Sensor Post Cat Ba" address="0x6486" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x66D2">
-    <title>96 Radiator outlet temperature implausible</title>
+    <title>96  Radiator outlet temperature implausible</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="96 Radiator outlet temperatur" address="0x6750" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
@@ -707,7 +707,7 @@
     <XDFPATCHENTRY name="141  Tank Fill Level Implausi" address="0xE05A" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x1072">
-    <title>142 System check, suction jet pump for brake boosting</title>
+    <title>142  System check, suction jet pump for brake boosting</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="3" />
     <XDFPATCHENTRY name="142 System check, suction jet" address="0xE068" datasize="0xE" patchdata="0000000000000000000000000000" />
@@ -729,7 +729,7 @@
     <XDFPATCHENTRY name="145  Lambda Sensor Control Ba" address="0x61F4" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x2521">
-    <title>148 EWS 3.3 interface DME-EWS/Interface, electronic engine immobilizer</title>
+    <title>148  EWS 3.3 interface DME-EWS/Interface, electronic engine immobilizer</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="148 EWS 3.3 interface DME-EWS" address="0xE5E0" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
@@ -750,7 +750,7 @@
     <XDFPATCHENTRY name="151  Internal DME Fault" address="0x644E" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x200B">
-    <title>154 Crankcase breather</title>
+    <title>154  Crankcase breather</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="154 Crankcase breather" address="0xE4D6" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
@@ -1025,12 +1025,12 @@
     <XDFPATCHENTRY name="220  DME Internal Processor C" address="0x66E0" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x6F28">
-    <title>221 System test, crankcase breather</title>
+    <title>221  System test, crankcase breather</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="221 System test, crankcase br" address="0xE4E4" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x3FCD">
-    <title>222 No CAN-bus signal from supplementary control module</title>
+    <title>222  No CAN-bus signal from supplementary control module</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="222 No CAN-bus signal from su" address="0xE412" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
@@ -1040,17 +1040,17 @@
     <XDFPATCHENTRY name="223 Charge-Air Pressure Senso" address="0xE420" datasize="0xE" patchdata="DFA0A004010104000102032800FF" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x3022">
-    <title>225 Outside temperature from instrument cluster implausible</title>
+    <title>225  Outside temperature from instrument cluster implausible</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="225 Outside temperature from " address="0xE43C" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x369C">
-    <title>226 Time value from instrument cluster implausible</title>
+    <title>226  Time value from instrument cluster implausible</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="226 Time value from instrumen" address="0xE44A" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x56F">
-    <title>227 ??? Activation, battery disconnecting switch</title>
+    <title>227  ??? Activation, battery disconnecting switch</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="227 ??? Activation, battery d" address="0xE458" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
@@ -1060,7 +1060,7 @@
     <XDFPATCHENTRY name="228  Electronic Throttle Limi" address="0xE466" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x6F36">
-    <title>229 Electric throttle: control deviation</title>
+    <title>229  Electric throttle: control deviation</title>
     <CATEGORYMEM index="0" category="1" />
     <XDFPATCHENTRY name="229 Electric throttle: contro" address="0xE474" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
