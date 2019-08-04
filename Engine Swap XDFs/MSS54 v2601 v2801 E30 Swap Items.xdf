@@ -1,4 +1,4 @@
-<!-- Written 07/20/2019 15:08:22 -->
+<!-- Written 08/04/2019 13:15:44 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -127,7 +127,7 @@
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x3C6C">
     <title>Chassis coding configuration Master</title>
-    <description>cfg_m.Baureihe&#013;&#010;Chassis coding configuration&#013;&#010;$08  E36 &#013;&#010;$10  E39 &#013;&#010;$20  E46 &#013;&#010;$40  E52 &#013;&#010;$80  E59 &#013;&#010;ELSE  undefiniert</description>
+    <description>cfg_m.Baureihe&#013;&#010;Chassis coding configuration&#013;&#010;08  E36 &#013;&#010;10  E39 &#013;&#010;20  E46 &#013;&#010;40  E52 &#013;&#010;80  E59 &#013;&#010;ELSE  undefiniert</description>
     <CATEGORYMEM index="0" category="66" />
     <EMBEDDEDDATA mmedaddress="0x4006" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <outputtype>3</outputtype>
@@ -140,7 +140,7 @@
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0xBA0">
     <title>Chassis coding configuration Slave</title>
-    <description>cfg_s.Baureihe&#013;&#010;Chassis coding configuration&#013;&#010;$08  E36 &#013;&#010;$10  E39 &#013;&#010;$20  E46 &#013;&#010;$40  E52 &#013;&#010;$80  E59 &#013;&#010;ELSE  undefiniert</description>
+    <description>cfg_s.Baureihe&#013;&#010;Chassis coding configuration&#013;&#010;08  E36 &#013;&#010;10  E39 &#013;&#010;20  E46 &#013;&#010;40  E52 &#013;&#010;80  E59 &#013;&#010;ELSE  undefiniert</description>
     <CATEGORYMEM index="0" category="66" />
     <EMBEDDEDDATA mmedaddress="0x06" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <outputtype>3</outputtype>
@@ -291,7 +291,7 @@
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x7951" vislevel="5">
     <title>Automatic Stability Control_TORQUE</title>
-    <description>K_MD_ASC_CONTROL&#013;&#010;$0 1 ASC/MSR freigegeben :&#013;&#010;$1 1 ASC gesperrt :&#013;&#010;$2 1 MSR gesperrt :&#013;&#010;$3 1 ASC/MSR gesperrt&#013;&#010;</description>
+    <description>K_MD_ASC_CONTROL&#013;&#010;0  ASC/MSR freigegeben :&#013;&#010;1  ASC gesperrt :&#013;&#010;2  MSR gesperrt :&#013;&#010;3  ASC/MSR gesperrt&#013;&#010;</description>
     <CATEGORYMEM index="2" category="51" />
     <EMBEDDEDDATA mmedaddress="0x6DFB" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>&quot;-&quot;</units>
