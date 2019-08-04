@@ -1,4 +1,4 @@
-<!-- Written 07/29/2019 20:56:14 -->
+<!-- Written 08/01/2019 23:46:52 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -1077,7 +1077,6 @@
   <XDFPATCH uniqueid="0x76B0">
     <title>232  Tank Vent Valve Function Check</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="3" />
     <XDFPATCHENTRY name="232  Tank Vent Valve Function" address="0x6582" datasize="0xE" patchdata="0000000000000000000000000000" />
   </XDFPATCH>
   <XDFPATCH uniqueid="0x4AE2">

@@ -1,4 +1,4 @@
-<!-- Written 07/25/2019 16:25:10 -->
+<!-- Written 07/31/2019 00:18:22 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -6415,9 +6415,7 @@
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
-    <MATH equation="">
-      <VAR id="x" />
-    </MATH>
+    <MATH equation="" />
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x8B8" vislevel="1">
     <title>Ambient Air Pressure_OFFSET</title>
@@ -18091,9 +18089,7 @@
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
-    <MATH equation="">
-      <VAR id="x" />
-    </MATH>
+    <MATH equation="" />
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x8B8" vislevel="10">
     <title>K_P_UMG_OFFSET</title>

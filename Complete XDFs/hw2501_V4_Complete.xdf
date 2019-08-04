@@ -1,4 +1,4 @@
-<!-- Written 07/24/2019 22:21:29 -->
+<!-- Written 07/31/2019 23:49:46 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -6415,9 +6415,7 @@
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
-    <MATH equation="">
-      <VAR id="x" />
-    </MATH>
+    <MATH equation="" />
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x8B8" vislevel="1">
     <title>Ambient Air Pressure_OFFSET</title>
@@ -18091,9 +18089,7 @@
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
-    <MATH equation="">
-      <VAR id="x" />
-    </MATH>
+    <MATH equation="" />
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x8B8" vislevel="10">
     <title>K_P_UMG_OFFSET</title>
@@ -37424,7 +37420,7 @@
     <description>KL_SMG_KUPP_M_AB_ZR  2AE4&#013;&#010;HW:112 Version:211323002501JD39&#013;&#010;Created by find routine V0.35&#013;&#010;BMWFlash/Galleto File Orientation [Slave Master]&#013;&#010;Matched Length:   MatchRatio: -0.01&#013;&#010;BlockFound: 0 NearbyBlockMatch:  Var: 224 HasDuplicate?: No &#013;&#010;Corrected by saildot4k&#013;&#010;Units- X: &quot;%t_END&quot; Y: &quot;%FW&quot;  &#013;&#010;Named- X: t_NOR Function: smg  SizeChange: 0 &#013;&#010;</description>
     <CATEGORYMEM index="2" category="73" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x2AEC" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x2AE4" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>&quot;%t_END&quot;</units>
       <indexcount>8</indexcount>
       <outputtype>2</outputtype>
@@ -38988,7 +38984,7 @@
       <min>0.000000</min>
       <max>100.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="(x/128)*100">
+      <MATH equation="100-((x/128)*100)">
         <VAR id="x" />
       </MATH>
     </XDFAXIS>
