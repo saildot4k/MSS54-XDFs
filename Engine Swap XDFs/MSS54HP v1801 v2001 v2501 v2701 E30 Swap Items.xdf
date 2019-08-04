@@ -1,4 +1,4 @@
-<!-- Written 08/04/2019 12:20:55 -->
+<!-- Written 08/04/2019 15:42:14 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -117,7 +117,7 @@
   <XDFPATCH uniqueid="0x41C0">
     <title>EWS</title>
     <CATEGORYMEM index="0" category="66" />
-    <XDFPATCHENTRY name="EWS" address="0x89" datasize="0x5" patchdata="64FF5A0000" basedata="64005A0000" />
+    <XDFPATCHENTRY name="EWS" address="0x89" datasize="0x5" patchdata="64FF5A0000" />
   </XDFPATCH>
   <XDFCONSTANT uniqueid="0x38D0" vislevel="1">
     <title>Gearbox Type Configuration Master</title>
@@ -385,8 +385,8 @@
   <XDFPATCH uniqueid="0xA8C">
     <title>Disable SAP/CAT Heating/DTC</title>
     <CATEGORYMEM index="0" category="35" />
-    <XDFPATCHENTRY name="SAP" address="0xC100" datasize="0x6" patchdata="00FF04B0B9B9" basedata="01FF04B05FAA" />
-    <XDFPATCHENTRY name="DTC" address="0xE3BE" datasize="0xE" patchdata="AA010101010101000102032800FF" basedata="AA010101010101000102032827FF" />
+    <XDFPATCHENTRY name="SAP" address="0xC100" datasize="0x6" patchdata="00FF04B0B9B9" />
+    <XDFPATCHENTRY name="DTC" address="0xE3BE" datasize="0xE" patchdata="AA010101010101000102032800FF" />
   </XDFPATCH>
   <XDFCONSTANT uniqueid="0x7F74">
     <title>K_S_GANG_LL_ED</title>
