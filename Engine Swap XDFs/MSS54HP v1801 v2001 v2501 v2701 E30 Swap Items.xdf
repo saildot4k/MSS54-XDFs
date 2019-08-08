@@ -1,4 +1,4 @@
-<!-- Written 08/04/2019 15:42:14 -->
+<!-- Written 08/05/2019 23:14:52 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -356,7 +356,7 @@
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x33EC" vislevel="1">
     <title>Engine Speed_MAX RPM LIMIT</title>
-    <description>K_N_TBEGR &#013;&#010;</description>
+    <description>K_N_TBEGR &#013;&#010;&#013;&#010;ECU records when RPM exceeds this limit so that warranty of the engine may be denied</description>
     <CATEGORYMEM index="2" category="52" />
     <EMBEDDEDDATA mmedaddress="0xC9DC" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>&quot;Upm&quot;</units>
@@ -368,6 +368,66 @@
       <VAR id="x" />
     </MATH>
   </XDFCONSTANT>
+  <XDFFUNCTION uniqueid="0x12" vislevel="10" flags="0x0">
+    <title>Engine Speed_Maximum RPM/Gear</title>
+    <description>KL_N_MAX  41C&#013;&#010;HW:112 Version:211323002701J469&#013;&#010;Created by find routine V0.35&#013;&#010;BMWFlash/Galleto File Orientation [Slave Master]&#013;&#010;Matched Length: 33  MatchRatio: 1.00&#013;&#010;BlockFound: 0 NearbyBlockMatch: 12 Var: 219 HasDuplicate?: No &#013;&#010;Units- X: &quot;-&quot; Y: &quot;Upm&quot;  &#013;&#010;Named- X: gang Function: Einspritzung  SizeChange: 0 &#013;&#010;</description>
+    <CATEGORYMEM index="2" category="28" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x40C" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>&quot;-&quot;</units>
+      <indexcount>8</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="x">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x41C" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="x">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+  </XDFFUNCTION>
+  <XDFFUNCTION uniqueid="0x1E34" vislevel="10" flags="0x0">
+    <title>Engine Speed_Maximum Speed/Gear</title>
+    <description>KL_V_MAX_GANG  8FA4&#013;&#010;HW:112 Version:211323002701J469&#013;&#010;Created by find routine V0.35&#013;&#010;BMWFlash/Galleto File Orientation [Slave Master]&#013;&#010;Matched Length: 33  MatchRatio: 1.00&#013;&#010;BlockFound: 0 NearbyBlockMatch: 20 Var: 231 HasDuplicate?: No &#013;&#010;Units- X: &quot;-&quot; Y: &quot;km/h&quot;  &#013;&#010;Named- X: gang Function: Momentenmanager  SizeChange: 0 &#013;&#010;</description>
+    <CATEGORYMEM index="2" category="51" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x8F94" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>&quot;-&quot;</units>
+      <indexcount>8</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="x">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x8FA4" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="x/16">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+  </XDFFUNCTION>
   <XDFCONSTANT uniqueid="0x4D83" vislevel="5">
     <title>Automatic Stability Control_TORQUE</title>
     <description>K_MD_ASC_CONTROL&#013;&#010;Stock: 00&#013;&#010;Modification: 03&#013;&#010;0  ASC/MSR freigegeben &#013;&#010;1  ASC gesperrt&#013;&#010;2  MSR gesperrt&#013;&#010;3  ASC/MSR gesperrt</description>

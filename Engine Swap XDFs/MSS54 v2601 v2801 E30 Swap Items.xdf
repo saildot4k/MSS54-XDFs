@@ -1,4 +1,4 @@
-<!-- Written 08/04/2019 15:42:51 -->
+<!-- Written 08/05/2019 23:15:23 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -277,7 +277,7 @@
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x45AA" vislevel="1">
     <title>Engine Speed_MAX RPM LIMIT</title>
-    <description>K_N_TBEGR</description>
+    <description>K_N_TBEGR&#013;&#010;&#013;&#010;ECU records when RPM exceeds this limit so that warranty of the engine may be denied</description>
     <CATEGORYMEM index="0" category="52" />
     <EMBEDDEDDATA mmedaddress="0x5CE2" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>&quot;Upm&quot;</units>
