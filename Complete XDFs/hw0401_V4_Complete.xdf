@@ -36296,10 +36296,11 @@
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x34A" vislevel="10">
     <title>K_LA_FREIGABE</title>
-    <description>K_LA_FREIGABE  4802&#013;&#010;HW:211 Version:211325000401PD11&#013;&#010;Created by find routine V0.55&#013;&#010;BMWFlash/Galleto File Orientation [Slave Master]&#013;&#010;Matched Length:   MatchRatio: 1.00&#013;&#010;BlockFound: 1 NearbyBlockMatch: -1 Var: 842 HasDuplicate?: No &#013;&#010;Units- &quot;-&quot;  &#013;&#010;Function: Lambda  SizeChange: 0 &#013;&#010;Description: None &#013;&#010;&#013;&#010;</description>
+    <description>K_LA_FREIGABE  4802&#013;&#010;&#013;&#010;&#013;&#010;&#013;&#010;0 - unused&#013;&#010;1 - precat bank1&#013;&#010;2 - precat bank2&#013;&#010;3 - postcat bank1&#013;&#010;4 - postcat bank2&#013;&#010;5 - multiplicative adaptation enabled&#013;&#010;6 - additive adaptation enabled&#013;&#010;7 - unused&#013;&#010;&#013;&#010;E3 - 11100011 (postcat and multiplicative disabled)&#013;&#010;E7 - 11100111 (postcat disabled)&#013;&#010;HW:112 Version:211323002701J469&#013;&#010;&#013;&#010;Lambda Controller &amp; Adaptation Status bit breakdown:&#013;&#010;Bit 0: free&#013;&#010;Bit 1: Controller 1 enabled&#013;&#010;Bit 2: Controller 2 enabled&#013;&#010;Bit 3: free&#013;&#010;Bit 4: free&#013;&#010;Bit 5: Adaptation Factor enabled&#013;&#010;Bit 6: Adaptation Offset enabled&#013;&#010;Bit 7: free&#013;&#010;HW:211 Version:211325000401PD11&#013;&#010;Created by find routine V0.55&#013;&#010;BMWFlash/Galleto File Orientation [Slave Master]&#013;&#010;Matched Length:   MatchRatio: 1.00&#013;&#010;BlockFound: 1 Ne</description>
     <CATEGORYMEM index="2" category="41" />
     <EMBEDDEDDATA mmedaddress="0x4802" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>&quot;-&quot;</units>
+    <outputtype>3</outputtype>
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
