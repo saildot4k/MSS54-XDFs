@@ -1,4 +1,4 @@
-<!-- Written 08/05/2019 23:15:23 -->
+<!-- Written 08/08/2019 19:25:49 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -74,7 +74,97 @@
     <CATEGORY index="0x4A" name="Headings" />
     <CATEGORY index="0x4B" name="DTC" />
   </XDFHEADER>
-  <XDFCONSTANT uniqueid="0x59E" vislevel="1">
+  <XDFTABLE uniqueid="0x6FDC" flags="0x0">
+    <title>Software Version</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x7FB8" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <outputtype>4</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7FB8" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>4</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x67F7" flags="0x30">
+    <title>Throttle Curves</title>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4176" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>10</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X/10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedcolcount="2" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>2</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="Sport" />
+      <LABEL index="1" value="Comfort" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x418A" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="192" />
+      <units>Throttle %</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>100.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X/10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFPATCH uniqueid="0x544A">
+    <title>Disable SAP/CAT Heating/DTC</title>
+    <CATEGORYMEM index="0" category="35" />
+    <XDFPATCHENTRY name="SAP" address="0x75D4" datasize="0x6" patchdata="00FF04B0B9B9" />
+    <XDFPATCHENTRY name="DTC" address="0x7BBE" datasize="0xE" patchdata="AA010101010101000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0xCEC">
+    <title>EWS</title>
+    <CATEGORYMEM index="0" category="66" />
+    <XDFPATCHENTRY name="EWS" address="0x5F" datasize="0x5" patchdata="64FF5A0000" />
+  </XDFPATCH>
+  <XDFCONSTANT uniqueid="0x1D4C" vislevel="1">
     <title>Sport Mode_MEMORY</title>
     <description>Sport Mode Memory&#013;&#010;K_FDYN_CONTROL&#013;&#010;&#013;&#010;Value: 00 - on (sport mode) with DSC; Starts in comfort mode, but essentially, if you press the sport mode button with it flashed with this value, it will NOT enable. It will ONLY enable if you disable the DSC. For those with M-Track mode, it will not turn on with M-Track! It will only enable with a full DSC disable. &#013;&#010;Value: 01 - always on; To clarify, it is indeed always on (sport mode). In fact, you simply can&apos;t turn it off (switch to comfort mode)&#013;&#010;Value: 02 - always off; It is always off (comfort mode), and you simply can&apos;t turn it on (switch to sport mode).&#013;&#010;Value: 03 - DEFAULT; off (comfort mode) when the car starts, subsequent on/o&#013;&#010;Value: 04 -  Memory, defaults to last setting used</description>
     <CATEGORYMEM index="2" category="66" />
@@ -88,11 +178,46 @@
       <VAR id="x" />
     </MATH>
   </XDFCONSTANT>
-  <XDFPATCH uniqueid="0x9C">
-    <title>EWS</title>
-    <CATEGORYMEM index="0" category="66" />
-    <XDFPATCHENTRY name="EWS" address="0x5F" datasize="0x5" patchdata="64FF5A0000" />
-  </XDFPATCH>
+  <XDFCONSTANT uniqueid="0x6E33" vislevel="5">
+    <title>Automatic Stability Control_TORQUE</title>
+    <description>K_MD_ASC_CONTROL&#013;&#010;0  ASC/MSR freigegeben :&#013;&#010;1  ASC gesperrt :&#013;&#010;2  MSR gesperrt :&#013;&#010;3  ASC/MSR gesperrt&#013;&#010;</description>
+    <CATEGORYMEM index="2" category="51" />
+    <EMBEDDEDDATA mmedaddress="0x6DFB" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;-&quot;</units>
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7B18">
+    <title>K_LDPH_CFG</title>
+    <description>TXTEQ(x::$0 -1 Ohne LDPH :$1 1 LDPH ab Werk :$2 1 LDPH Nachruest:$3 1 LDPH immer ein :ELSE 3 undef. )&#013;&#010;&#013;&#010;Default 3&#013;&#010;Euro 0</description>
+    <CATEGORYMEM index="2" category="69" />
+    <EMBEDDEDDATA mmedaddress="0x7538" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x4B3A">
+    <title>K_LDP_CFG</title>
+    <description>TXTEQ(x::$0 -1 Ohne LDP :$1 1 Mit LDP :$2 1 Keine Fehlerheilung :ELSE 3 undef. )&#013;&#010;&#013;&#010;Default 2&#013;&#010;Euro 0</description>
+    <CATEGORYMEM index="2" category="69" />
+    <EMBEDDEDDATA mmedaddress="0x2E32" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x6AAC" vislevel="1">
     <title>Gearbox Type Configuration Master</title>
     <description>cfg_m.getriebetyp&#013;&#010;3 Manual&#013;&#010;40 SMG</description>
@@ -204,7 +329,7 @@
     </MATH>
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x492C">
-    <title>Brake Light Switch-Cruise Control</title>
+    <title>Brake Light Switch Config</title>
     <description> K_S_BLS_CFG&#013;&#010;Reference Thread: https://www.r3vlimited.com/board/showthread.php?t=425797&#013;&#010;&#013;&#010;&#013;&#010;00 &quot;BLS+BLTS+DSC&quot;&#013;&#010;01 &quot;BLS+DSC&quot;&#013;&#010;02 &quot;BLS+BLTS&quot;&#013;&#010;03 &quot;BLS&quot;&#013;&#010;&#013;&#010;BLS: Brake Light Switch&#013;&#010;BLTS: Brake Light Test Switch&#013;&#010;&#013;&#010;E30 2 Pole only BLS&#013;&#010;E36 4 Pole BLS and BLTS</description>
     <CATEGORYMEM index="0" category="66" />
     <EMBEDDEDDATA mmedaddress="0x5FE2" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -227,6 +352,20 @@
     <DALINK index="0" />
     <MATH equation="X">
       <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0xEAF" vislevel="10">
+    <title>Eductor Pump Control</title>
+    <description>K_SSP_CONTROL &#013;&#010;Eductor Pump Transfer Fuel from one side to the other&#013;&#010;&#013;&#010;Stock: 00&#013;&#010;Modification: 03&#013;&#010;&#013;&#010;00: Function On&#013;&#010;01: Drivers On&#013;&#010;02: Drivers Off&#013;&#010;03: No SSP Installed</description>
+    <CATEGORYMEM index="2" category="60" />
+    <EMBEDDEDDATA mmedaddress="0x762A" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;-&quot;</units>
+    <rangehigh>3.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
     </MATH>
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x25E9" vislevel="1">
@@ -289,26 +428,66 @@
       <VAR id="x" />
     </MATH>
   </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x7951" vislevel="5">
-    <title>Automatic Stability Control_TORQUE</title>
-    <description>K_MD_ASC_CONTROL&#013;&#010;0  ASC/MSR freigegeben :&#013;&#010;1  ASC gesperrt :&#013;&#010;2  MSR gesperrt :&#013;&#010;3  ASC/MSR gesperrt&#013;&#010;</description>
+  <XDFFUNCTION uniqueid="0x485F" vislevel="1" flags="0x0">
+    <title>Engine Speed_MAXIMUM RPM/Gear</title>
+    <description>KL_N_MAX  3CA&#013;&#010;HW:522 Version:211322002801J469&#013;&#010;Created by find routine V0.35&#013;&#010;BMWFlash/Galleto File Orientation [Slave Master]&#013;&#010;Matched Length: 33  MatchRatio: 1.00&#013;&#010;BlockFound: 0 NearbyBlockMatch: 12 Var: 219 HasDuplicate?: No &#013;&#010;Units- X: &quot;-&quot; Y: &quot;Upm&quot;  &#013;&#010;Named- X: gang Function: Einspritzung  SizeChange: 0 &#013;&#010;</description>
+    <CATEGORYMEM index="2" category="28" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x3BA" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>&quot;-&quot;</units>
+      <indexcount>8</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="x">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x3CA" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="x">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+  </XDFFUNCTION>
+  <XDFFUNCTION uniqueid="0x5A08" vislevel="10" flags="0x0">
+    <title>Engine Speed_Maximum Speed/Gear</title>
+    <description>KL_V_MAX_GANG  6EE2&#013;&#010;HW:522 Version:211322002801J469&#013;&#010;Created by find routine V0.35&#013;&#010;BMWFlash/Galleto File Orientation [Slave Master]&#013;&#010;Matched Length: 33  MatchRatio: 1.00&#013;&#010;BlockFound: 0 NearbyBlockMatch: 20 Var: 231 HasDuplicate?: No &#013;&#010;Units- X: &quot;-&quot; Y: &quot;km/h&quot;  &#013;&#010;Named- X: gang Function: Momentenmanager  SizeChange: 0 &#013;&#010;</description>
     <CATEGORYMEM index="2" category="51" />
-    <EMBEDDEDDATA mmedaddress="0x6DFB" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units>&quot;-&quot;</units>
-    <outputtype>3</outputtype>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="x">
-      <VAR id="x" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFPATCH uniqueid="0x769A">
-    <title>Disable SAP/CAT Heating/DTC</title>
-    <CATEGORYMEM index="0" category="35" />
-    <XDFPATCHENTRY name="SAP" address="0x75D4" datasize="0x6" patchdata="00FF04B0B9B9" />
-    <XDFPATCHENTRY name="DTC" address="0x7BBE" datasize="0xE" patchdata="AA010101010101000102032800FF" />
-  </XDFPATCH>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6ED2" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>&quot;-&quot;</units>
+      <indexcount>8</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="x">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6EE2" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="x/16">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+  </XDFFUNCTION>
   <XDFCONSTANT uniqueid="0x3C61">
     <title>K_S_GANG_LL_ED</title>
     <description>Disable Gear Position Switch for Cruise Control: doesn&apos;t throw error when idling and clutch is up&#013;&#010;&#013;&#010;Default 0032&#013;&#010;Disable FFFF</description>
@@ -607,109 +786,4 @@
       <VAR id="x" />
     </MATH>
   </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x182E">
-    <title>K_LDPH_CFG</title>
-    <description>TXTEQ(x::$0 -1 Ohne LDPH :$1 1 LDPH ab Werk :$2 1 LDPH Nachruest:$3 1 LDPH immer ein :ELSE 3 undef. )&#013;&#010;&#013;&#010;Default 3&#013;&#010;Euro 0</description>
-    <CATEGORYMEM index="2" category="69" />
-    <EMBEDDEDDATA mmedaddress="0x7538" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <outputtype>2</outputtype>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x33C9">
-    <title>K_LDP_CFG</title>
-    <description>TXTEQ(x::$0 -1 Ohne LDP :$1 1 Mit LDP :$2 1 Keine Fehlerheilung :ELSE 3 undef. )&#013;&#010;&#013;&#010;Default 2&#013;&#010;Euro 0</description>
-    <CATEGORYMEM index="2" category="69" />
-    <EMBEDDEDDATA mmedaddress="0x2E32" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <outputtype>2</outputtype>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFTABLE uniqueid="0x49CC" flags="0x0">
-    <title>Software Version</title>
-    <CATEGORYMEM index="0" category="1" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x7FB8" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <indexcount>16</indexcount>
-      <outputtype>4</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <indexcount>1</indexcount>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x7FB8" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <decimalpl>2</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>4</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x68E8" flags="0x30">
-    <title>Throttle Curves</title>
-    <CATEGORYMEM index="0" category="26" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x4176" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>10</indexcount>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="X/10">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="8" mmedcolcount="2" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>2</indexcount>
-      <outputtype>4</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="Sport" />
-      <LABEL index="1" value="Comfort" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x418A" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="192" />
-      <units>Throttle %</units>
-      <decimalpl>1</decimalpl>
-      <min>0.000000</min>
-      <max>100.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X/10">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
 </XDFFORMAT>

@@ -1,4 +1,4 @@
-<!-- Written 08/05/2019 23:14:52 -->
+<!-- Written 08/08/2019 19:25:56 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -74,11 +74,116 @@
     <CATEGORY index="0x4A" name="Headings" />
     <CATEGORY index="0x4B" name="DTC" />
   </XDFHEADER>
-  <XDFCONSTANT uniqueid="0xA72" vislevel="1">
+  <XDFTABLE uniqueid="0x15" flags="0x0">
+    <title>Software Version</title>
+    <description>DO NOT EDIT</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0xBFB8" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <outputtype>4</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0xBFB8" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>4</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x2C17" flags="0x30">
+    <title>Throttle Curves</title>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x822A" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>10</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X/10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>2</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>57</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="Sport" />
+      <LABEL index="1" value="Comfort" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x823E" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="192" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>100.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X/10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFPATCH uniqueid="0x3C3">
+    <title>Disable SAP/CAT Heating/DTC</title>
+    <CATEGORYMEM index="0" category="35" />
+    <XDFPATCHENTRY name="SAP" address="0xC100" datasize="0x6" patchdata="00FF04B0B9B9" />
+    <XDFPATCHENTRY name="DTC" address="0xE3BE" datasize="0xE" patchdata="AA010101010101000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7FEE">
+    <title>EWS</title>
+    <CATEGORYMEM index="0" category="66" />
+    <XDFPATCHENTRY name="EWS" address="0x89" datasize="0x5" patchdata="64FF5A0000" />
+  </XDFPATCH>
+  <XDFCONSTANT uniqueid="0x3A16" vislevel="1">
     <title>Sport Mode_MEMORY</title>
     <description>Sport Mode Memory&#013;&#010;K_FDYN_CONTROL&#013;&#010;&#013;&#010;Value: 00 - on (sport mode) with DSC; Starts in comfort mode, but essentially, if you press the sport mode button with it flashed with this value, it will NOT enable. It will ONLY enable if you disable the DSC. For those with M-Track mode, it will not turn on with M-Track! It will only enable with a full DSC disable. &#013;&#010;Value: 01 - always on; To clarify, it is indeed always on (sport mode). In fact, you simply can&apos;t turn it off (switch to comfort mode)&#013;&#010;Value: 02 - always off; It is always off (comfort mode), and you simply can&apos;t turn it on (switch to sport mode).&#013;&#010;Value: 03 - DEFAULT; off (comfort mode) when the car starts, subsequent on/o&#013;&#010;Value: 04 -  Memory, defaults to last setting used</description>
     <CATEGORYMEM index="2" category="66" />
     <EMBEDDEDDATA mmedaddress="0x8026" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&quot;-&quot;</units>
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7E80" vislevel="5">
+    <title>Automatic Stability Control_TORQUE</title>
+    <description>K_MD_ASC_CONTROL&#013;&#010;Stock: 00&#013;&#010;Modification: 03&#013;&#010;0  ASC/MSR freigegeben &#013;&#010;1  ASC gesperrt&#013;&#010;2  MSR gesperrt&#013;&#010;3  ASC/MSR gesperrt</description>
+    <CATEGORYMEM index="2" category="51" />
+    <EMBEDDEDDATA mmedaddress="0x8EBD" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>&quot;-&quot;</units>
     <outputtype>3</outputtype>
     <datatype>0</datatype>
@@ -114,11 +219,6 @@
       <VAR id="X" />
     </MATH>
   </XDFCONSTANT>
-  <XDFPATCH uniqueid="0x41C0">
-    <title>EWS</title>
-    <CATEGORYMEM index="0" category="66" />
-    <XDFPATCHENTRY name="EWS" address="0x89" datasize="0x5" patchdata="64FF5A0000" />
-  </XDFPATCH>
   <XDFCONSTANT uniqueid="0x38D0" vislevel="1">
     <title>Gearbox Type Configuration Master</title>
     <description>cfg_m.getriebetyp&#013;&#010;03 Manual&#013;&#010;40 SMG&#013;&#010;</description>
@@ -230,7 +330,7 @@
     </MATH>
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x1F90">
-    <title>Brake Light Switch-Cruise Control</title>
+    <title>Brake Light Switch Config</title>
     <description>K_S_BLS_CFG&#013;&#010;Reference Thread: https://www.r3vlimited.com/board/showthread.php?t=425797&#013;&#010;&#013;&#010;&#013;&#010;00 &quot;BLS+BLTS+DSC&quot;&#013;&#010;01 &quot;BLS+DSC&quot;&#013;&#010;02 &quot;BLS+BLTS&quot;&#013;&#010;03 &quot;BLS&quot;&#013;&#010;&#013;&#010;BLS: Brake Light Switch&#013;&#010;BLTS: Brake Light Test Switch&#013;&#010;&#013;&#010;E30 2 Pole only BLS&#013;&#010;E36 4 Pole BLS and BLTS</description>
     <CATEGORYMEM index="0" category="66" />
     <EMBEDDEDDATA mmedaddress="0xCD64" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -255,47 +355,8 @@
       <VAR id="X" />
     </MATH>
   </XDFCONSTANT>
-  <XDFTABLE uniqueid="0x55C4" flags="0x0">
-    <title>Software Version</title>
-    <description>DO NOT EDIT</description>
-    <CATEGORYMEM index="0" category="1" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0xBFB8" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <indexcount>16</indexcount>
-      <outputtype>4</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <indexcount>1</indexcount>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="00" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0xBFB8" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <decimalpl>2</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>4</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
   <XDFCONSTANT uniqueid="0x1A6A">
-    <title>K_SSP_CONTROL</title>
+    <title>Eductor Pump Control</title>
     <description>K_SSP_CONTROL &#013;&#010;Eductor Pump Transfer Fuel from one side to the other&#013;&#010;&#013;&#010;Stock: 00&#013;&#010;Modification: 03&#013;&#010;&#013;&#010;00: Function On&#013;&#010;01: Drivers On&#013;&#010;02: Drivers Off&#013;&#010;03: No SSP Installed</description>
     <CATEGORYMEM index="0" category="60" />
     <EMBEDDEDDATA mmedaddress="0xC156" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -428,26 +489,6 @@
       </MATH>
     </XDFAXIS>
   </XDFFUNCTION>
-  <XDFCONSTANT uniqueid="0x4D83" vislevel="5">
-    <title>Automatic Stability Control_TORQUE</title>
-    <description>K_MD_ASC_CONTROL&#013;&#010;Stock: 00&#013;&#010;Modification: 03&#013;&#010;0  ASC/MSR freigegeben &#013;&#010;1  ASC gesperrt&#013;&#010;2  MSR gesperrt&#013;&#010;3  ASC/MSR gesperrt</description>
-    <CATEGORYMEM index="2" category="51" />
-    <EMBEDDEDDATA mmedaddress="0x8EBD" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units>&quot;-&quot;</units>
-    <outputtype>3</outputtype>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="x">
-      <VAR id="x" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFPATCH uniqueid="0xA8C">
-    <title>Disable SAP/CAT Heating/DTC</title>
-    <CATEGORYMEM index="0" category="35" />
-    <XDFPATCHENTRY name="SAP" address="0xC100" datasize="0x6" patchdata="00FF04B0B9B9" />
-    <XDFPATCHENTRY name="DTC" address="0xE3BE" datasize="0xE" patchdata="AA010101010101000102032800FF" />
-  </XDFPATCH>
   <XDFCONSTANT uniqueid="0x7F74">
     <title>K_S_GANG_LL_ED</title>
     <description>Disable Gear Position Switch for Cruise Control: doesn&apos;t throw error when idling and clutch is up&#013;&#010;&#013;&#010;Default 0032&#013;&#010;Disable FFFF</description>
@@ -746,45 +787,4 @@
       <VAR id="x" />
     </MATH>
   </XDFCONSTANT>
-  <XDFTABLE uniqueid="0x1B92" flags="0x30">
-    <title>Throttle Curves</title>
-    <CATEGORYMEM index="0" category="26" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x822A" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>10</indexcount>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="X/10">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>2</indexcount>
-      <outputtype>4</outputtype>
-      <datatype>57</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="Sport" />
-      <LABEL index="1" value="Comfort" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x823E" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="192" />
-      <decimalpl>1</decimalpl>
-      <min>0.000000</min>
-      <max>100.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X/10">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
 </XDFFORMAT>
