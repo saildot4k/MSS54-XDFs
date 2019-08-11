@@ -1,0 +1,7 @@
+XDF Notes
+
+MAF voltage scale conversion incorrect - 
+Hot Film MAF_VOLTAGE
+x/1023*5
+
+should be x/1023
