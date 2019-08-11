@@ -1,4 +1,4 @@
-<!-- Written 07/25/2019 16:44:10 -->
+<!-- Written 08/08/2019 22:48:46 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -1462,7 +1462,7 @@
     <description>KF_EGAS_WDK  83E8&#013;&#010;HW:108 Version:211323002001J424&#013;&#010;Created by find routine V0.35&#013;&#010;BMWFlash/Galleto File Orientation [Slave Master]&#013;&#010;Matched Length: 717  MatchRatio: 0.45&#013;&#010;BlockFound: 0 NearbyBlockMatch: 20 Var: 1 HasDuplicate?: No &#013;&#010;Units- X: &quot;Upm&quot; Y: &quot;-&quot; Z: &quot;%&quot; &#013;&#010;Named- X: n Y: rf &#013;&#010;Function: EGAS  SizeChange: 0 &#013;&#010;</description>
     <CATEGORYMEM index="2" category="26" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x83E8" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x839E" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>&quot;Upm&quot;</units>
       <indexcount>14</indexcount>
       <outputtype>2</outputtype>
@@ -1475,7 +1475,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x8000" mmedelementsizebits="16" mmedcolcount="23" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x83BA" mmedelementsizebits="16" mmedcolcount="23" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>&quot;-&quot;</units>
       <indexcount>23</indexcount>
       <decimalpl>4</decimalpl>
@@ -6415,9 +6415,7 @@
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
-    <MATH equation="">
-      <VAR id="x" />
-    </MATH>
+    <MATH equation="" />
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x8B8" vislevel="1">
     <title>Ambient Air Pressure_OFFSET</title>
@@ -18091,9 +18089,7 @@
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
-    <MATH equation="">
-      <VAR id="x" />
-    </MATH>
+    <MATH equation="" />
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x8B8" vislevel="10">
     <title>K_P_UMG_OFFSET</title>
