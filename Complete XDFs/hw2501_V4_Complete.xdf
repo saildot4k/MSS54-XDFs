@@ -38984,7 +38984,7 @@
       <min>0.000000</min>
       <max>100.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="100-((x/128)*100)">
+      <MATH equation="(x/128)*100">
         <VAR id="x" />
       </MATH>
     </XDFAXIS>
