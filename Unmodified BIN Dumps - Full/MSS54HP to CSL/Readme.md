@@ -1,0 +1,1 @@
+To convert your MSS54HP to a "CSL Clone" without the H-Bridge to run the intake flap, flash the included Full Binary in this folder, then the 0401 partial. You may use the 0401 CSL XDFs to modify the "tune".
