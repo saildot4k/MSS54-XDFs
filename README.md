@@ -12,7 +12,7 @@ Use [BMW FLASH](http://bimmersoftware.com/bmwflash) or [MSS Flasher](http://www.
 
 The link below to m3forum is vital to the usage of these tunerpro files:
 
-[M3 Forum Comprehensive MSS54/HP Coding](http://www.m3forum.net/m3forum/forumdisplay.php?f=109)
+[M3 Forum Comprehensive MSS54/HP Coding](http://www.m3forum.net/m3forum/forumdisplay.php?f=109) M3Forum is NLA. However efforts to ressurect it can be found at [M3Forum.us](http://www.m3forum.us)
 
 PLEASE READ the [DIY DME Modification.pdf](https://github.com/saildot4k/MSS54-XDFs/raw/master/DIY%20DME%20Modification.pdf) which explains finding your version and which cables and modifications are necessary.
 
