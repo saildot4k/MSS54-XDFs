@@ -6,7 +6,7 @@ Notes from Terra as seen [here](https://nam3forum.com/forums/forum/special-inter
 
 The CSL binaries Paffy has on the MSSFlasher website do not have all the changes necessary to play 100% nice with the non-CSL bootloader. It mostly works, but notably the ability to read error codes is broken
 
-Flash only the program - leave your tune as is (the tune built into the file above is just a standard CSL tune).
+Flash only the program - leave your tune as is (the tune built into the file above is just a standard CSL tune). IE: Flash full binary, then flash your tune, the partial, back. REMEMBER, ALWAYS BACKUP YOUR TUNE AND FULL BINARY!
 
 Read off your tune and change 0xE002 from 00 to 01, then flash that tune back to your car.
 
