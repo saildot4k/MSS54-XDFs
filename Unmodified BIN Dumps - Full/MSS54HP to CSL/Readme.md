@@ -1,6 +1,6 @@
 To convert your MSS54HP to a "CSL Clone" without the H-Bridge to run the intake flap, flash the included Full Binary in this folder, then the 0401 partial. You may use the 0401 CSL XDFs to modify the "tune".
 
-The "Paffy" full binary is the original modified version which allowed the HP to run the CSL software. However reading error codes is broken. The "Terra" full binary fixes this.
+The "Paffy" full binary is the original modified version which allowed the HP to run the CSL software. However reading error codes is broken. The "Terra" full binary fixes this. Both have stock CSL "tunes". Note: this means you may have to fix some tables for non-CSL cams, which you can copy from other partials.
 
 Notes from Terra as seen [here](https://nam3forum.com/forums/forum/special-interests/coding-tuning/26354-fix-for-error-code-reading-on-mssflasher-csl-tune). Quoted:
 
