@@ -12,7 +12,12 @@ DTC XDFs have a category for common errors to disable so that when you scan for 
 
 [MSS54 Cruise Control in E30](https://www.r3vlimited.com/board/showthread.php?t=425797)
 
-**S54 Swap Can Controller for AC control**
+**S54 Swap CAN Controller for AC control**
 [R3VLimited Forum Post](https://www.r3vlimited.com/board/showpost.php?p=4740425&postcount=129)
 
 This will let the AC compressor run, and the DME correct IDLE for AC on, as well as give you better control over the PWM Fan.
+
+**S54 Cruise Control wiring/coding**
+[R3VLimited Forum Post](https://www.r3vlimited.com/board/forum/e30-technical-forums/24v-engine-swaps/m54-s54/382669-mss54-cruise-control-in-e30)
+
+Adding cruise control will allow you to rest your tired accelerator foot after a day at the track!
