@@ -1,0 +1,1126 @@
+<!-- Written 08/01/2019 23:46:52 -->
+<XDFFORMAT version="1.60">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <deftitle>DTC Patches 1801/1901/2001/2501/2701</deftitle>
+    <description></description>
+    <BASEOFFSET offset="0" subtract="0" />
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x10000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+    <CATEGORY index="0x0" name="DTC 1801/1901/2001/2501/2701" />
+    <CATEGORY index="0x1" name="Version" />
+    <CATEGORY index="0x2" name="Swap DTC&apos;s DISABLED" />
+  </XDFHEADER>
+  <XDFPATCH uniqueid="0x660B">
+    <title>1  Fuel Pump Relay</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="1 Fuel Pump Relay" address="0x6076" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7A9F">
+    <title>2  Idle Speed Actuator- Closing Coil</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="2 Idle Speed Actuator- Closin" address="0xF092" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7BC3">
+    <title>3  Fuel Injector Cyl 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="3 Fuel Injector Cyl 1" address="0x61D4" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7520">
+    <title>4  Fuel Injector Cyl 3</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="4 Fuel Injector Cyl 3" address="0x61F0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x334">
+    <title>5  Fuel Injector Cyl 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="5 Fuel Injector Cyl 2" address="0x61E2" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0xB89">
+    <title>6  Time-Out SMG-CAN</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="6 Time out SMG-CAN" address="0x61B8" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1732">
+    <title>7  Intake Cam Position Sensor Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="7 Intake Cam Position Sensor " address="0x6110" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x663A">
+    <title>8  Intake Cam Position Sensor Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="8 Intake Cam Position Sensor " address="0xF298" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6358">
+    <title>9  Knock Sensor- Cyl 1-2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="9  Knock Sensor- Cyl 1-2" address="0xF0D8" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x9B0">
+    <title>10  Exhaust Cam Position Sensor Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="10  Exhaust Cam Position Sens" address="0x611E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x227F">
+    <title>11  Exhaust Cam Position Sensor Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="11  Exhaust Cam Position Sens" address="0xF2A6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x48C8">
+    <title>12  Lambda Sensor Signal- Pre Cat Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="12  Lambda Sensor Signal- Pre" address="0x60BC" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x32C9">
+    <title>13  Lambda Sensor Signal- Pre Cat Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="13  Lambda Sensor Signal- Pre" address="0x60AE" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x792D">
+    <title>14  DMTL Heating</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="14  DMTL Heating" address="0xF11E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x28B6">
+    <title>15  Camshaft Sensor Bank 1 Synchronisation</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="15  Camshaft Sensor Bank 1 Sy" address="0x65FC" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x61E4">
+    <title>16  Crankshaft Sensor</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="16  Crankshaft Sensor" address="0x6030" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x78C7">
+    <title>17  SMG Shift Sequence</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="17  SMG Shift Sequence" address="0x660A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2BBA">
+    <title>18 VANOS Pressure-Accumulator Valve</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="18 VANOS Pressure-Accumulator" address="0x62EC" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2A6">
+    <title>19  Aux Air Pump Relay</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="19  Aux Air Pump Relay" address="0xF3A2" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0xB2A">
+    <title>20  Starter Relay</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="20  Starter Relay" address="0xF1F0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3EAC">
+    <title>21  VANOS Retard Valve- Exhaust Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="21  VANOS Retard Valve- Exhau" address="0x6156" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5523">
+    <title>22  VANOS Advance Valve- Exhaust Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="22  VANOS Advance Valve- Exha" address="0x6148" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6A83">
+    <title>23  Ignition Coil- Cyl 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="23  Ignition Coil- Cyl 2" address="0x6412" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x19F0">
+    <title>24  Ignition Coil- Cyl 3</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="24  Ignition Coil- Cyl 3" address="0x6420" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x69D">
+    <title>25  Ignition Coil- Cyl 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="25  Ignition Coil- Cyl 1" address="0x6404" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4FA4">
+    <title>26  Ignition Coil- Cyl 8</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="26  Ignition Coil- Cyl 8" address="0x6466" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6057">
+    <title>27  DMTL Changeover Valve</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="27  DMTL Changeover Valve" address="0x6260" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1D57">
+    <title>28 Function, Map Cooling</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="28 Function, Map Cooling" address="0x62DE" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x91D">
+    <title>29  Idle Speed Control Valve NC Coil</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="29  Idle Speed Control Valve " address="0xF0A0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7EFC">
+    <title>30  Internal DME Fault</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="30  Internal DME Fault" address="0x6068" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x213B">
+    <title>31  Fuel Injector Cyl 5</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="31  Fuel Injector Cyl 5" address="0x620C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7142">
+    <title>32  Fuel Injector Cyl 6</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="32  Fuel Injector Cyl 6" address="0x621A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x166B">
+    <title>33  Fuel Injector Cyl 4</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="33  Fuel Injector Cyl 4" address="0x61FE" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x311A">
+    <title>34  Fuel Injector Cyl 7</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="34  Fuel Injector Cyl 7" address="0x6228" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6352">
+    <title>35  Fuel Injector Cyl 8</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="35  Fuel Injector Cyl 8" address="0x6236" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x25D8">
+    <title>36  Tank Vent Valve</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="36  Tank Vent Valve" address="0x60CA" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6EB8">
+    <title>37  Lambda Sensor Heater Pre Cat Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="37  Lambda Sensor Heater Pre " address="0x6316" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5BE1">
+    <title>38  Lambda Sensor Heater Pre Cat Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="38  Lambda Sensor Heater Pre " address="0x6324" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7AF2">
+    <title>39  Lambda Sensor Heater Post Cat Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="39  Lambda Sensor Heater Post" address="0x6332" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x10B1">
+    <title>40  Lambda Sensor Heater Post Cat Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="40  Lambda Sensor Heater Post" address="0x6340" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4674">
+    <title>41  Mass Air Flow Sensor Right</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="41  Mass Air Flow Sensor Righ" address="0xF260" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6F75">
+    <title>42  Road Speed Signal</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="42  Road Speed Signal" address="0xF110" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4D84">
+    <title>43  Temperature Sensor Signal- Radiator Outlet</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="43  Temperature Sensor Signal" address="0x605A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x75EF">
+    <title>44  Oil Level Sensor Signal</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="44  Oil Level Sensor Signal" address="0xF52A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1E8B">
+    <title>45  Electronic Throttle Motor MDK</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="45  Electronic Throttle Motor" address="0xF51C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x56F0">
+    <title>46 Consumption Signal KVA</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="46 Consumption Signal KVA" address="0x619C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x28E8">
+    <title>47 Engine Speed Signal TD</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="47  Engine Speed Signal TD" address="0x61AA" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3E4B">
+    <title>48  AirCon Control Module</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="48  AirCon Control Module" address="0xF252" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6E96">
+    <title>50  Ignition Coil- Cyl 4</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="50  Ignition Coil- Cyl 4" address="0x642E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x73FA">
+    <title>51  Ignition Coil- Cyl 6</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="51  Ignition Coil- Cyl 6" address="0x644A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2203">
+    <title>52  Ignition Coil- Cyl 5</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="52  Ignition Coil- Cyl 5" address="0x643C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x9DD">
+    <title>53  Electric Fan</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="53  Electric Fan" address="0x6014" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5526">
+    <title>54  System Voltage Main Relay</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="54  System Voltage Main Relay" address="0x6092" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x10DE">
+    <title>55  Ignition Coil- Cyl 7</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="55  Ignition Coil- Cyl 7" address="0x6458" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7C7F">
+    <title>56  Internal Index 96</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="56 Internal Index 96" address="0xF546" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x46A8">
+    <title>57  Mass Air Flow Sensor Left</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="57  Mass Air Flow Sensor Left" address="0xF26E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x624D">
+    <title>58  Sensor Voltage Supply 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="58  Sensor Voltage Supply" address="0xF236" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5D1A">
+    <title>59  Sensor Voltage Supply 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="59  Sensor Voltage Supply" address="0xF244" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7633">
+    <title>60  Throttle Pedal Position Sensor 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="60  Throttle Pedal Position S" address="0xF4F2" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x54C9">
+    <title>61  Throttle Pedal Position Sensor 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="61  Throttle Pedal Position S" address="0xF500" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2177">
+    <title>63  Aux Air Valve</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="63  Aux Air Valve" address="0xF3B0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x68B9">
+    <title>65  Throttle and Electric Throttle Actuator Potentiometer</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="65  Throttle and Electric Thr" address="0x60D8" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6903">
+    <title>66  DME-EWS Communication</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="66  DME-EWS Communication" address="0x61C6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5A80">
+    <title>67  VANOS Advance Valve- Inlet Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="67  VANOS Advance Valve- Inle" address="0x612C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5726">
+    <title>68  SMG safety concept</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="68 SMG safety concept" address="0x6618" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x193F">
+    <title>69  Knock Sensor Cyl 3-4</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="69  Knock Sensor Cyl 3-4" address="0xF0F4" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5126">
+    <title>70  Knock Sensor Cyl 7-8</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="70  Knock Sensor Cyl 7-8" address="0xF0E6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3FA7">
+    <title>71  Knock Sensor Cyl 5-6</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="71  Knock Sensor Cyl 5-6" address="0xF102" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x786E">
+    <title>72  VANOS Retard Valve- Inlet Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="72  VANOS Retard Valve- Inlet" address="0x613A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4C3B">
+    <title>73  Mass Air Flow Sensor Implausible</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="73  Mass Air Flow Sensor Impl" address="0xF21A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x30CA">
+    <title>74  VANOS Advance Valve- Inlet Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="74  VANOS Advance Valve- Inle" address="0xF2B4" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4F37">
+    <title>75  VANOS Retard Valve- Inlet Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="75  VANOS Retard Valve- Inlet" address="0xF2C2" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7F09">
+    <title>76  Ambient Air Pressure Sensor (DME Internal)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="76  Ambient Air Pressure Sens" address="0xF1D4" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5C3B">
+    <title>77  Intake Air Temperature Sensor</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="77  Intake Air Temperature Se" address="0xF1FE" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5721">
+    <title>78  Engine Coolant Temperature Sensor</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="78  Engine Coolant Temperatur" address="0xF20C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1B3F">
+    <title>79  Exhaust Gas Temperature Sensor</title>
+    <description>DISABLE FOR FORCED INDUCTION</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="79  Exhaust Gas Temperature S" address="0xF156" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1283">
+    <title>80  Switch Chain Frictional Connection</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="80  Switch Chain Frictional C" address="0x6244" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5E27">
+    <title>81  Multifunction Steering Wheel(E39)/Steering Column Lever(Z8)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="81  Multifunction Steering Wh" address="0xF2FA" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x43A9">
+    <title>82  Activation, exhaust flap</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="82 Activation, exhaust flap" address="0xF3DA" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3B1A">
+    <title>83  VANOS Advance Valve- Exhaust Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="83  VANOS Advance Valve- Exha" address="0xF2D0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x533F">
+    <title>84  VANOS Advance Valve- Exhaust Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="84  VANOS Advance Valve- Exha" address="0xF2DE" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x27E2">
+    <title>85  Throttle Position Sensor</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="85  Throttle Position Sensor" address="0xF50E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7E6C">
+    <title>86  CAN Bus Signal</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="86  CAN Bus Signal" address="0xF13A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x14EF">
+    <title>87  Lambda Sensor Post Cat Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="87  Lambda Sensor Post Cat Ba" address="0x62FA" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7089">
+    <title>88  Lambda Sensor Post Cat Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="88  Lambda Sensor Post Cat Ba" address="0x6308" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5E7F">
+    <title>89  Internal DME Fault</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="89  Internal DME Fault" address="0x6626" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4E4A">
+    <title>90 Trim control, cyl. 1-3</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="90 Trim control, cyl. 1-3" address="0x635C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1F16">
+    <title>91 Trim control, cyl. 4-6</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="91 Trim control, cyl. 4-6" address="0x636A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7AD0">
+    <title>92  Lambda Sensor Post Cat Bank 1 Voltage Monitoring</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="92  Lambda Sensor Post Cat Ba" address="0x6378" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x648C">
+    <title>93  Lambda Sensor Post Cat Bank 2 Voltage Monitoring</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="93  Lambda Sensor Post Cat Ba" address="0x6386" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x66D2">
+    <title>96  Radiator outlet temperature implausible</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="96 Radiator outlet temperatur" address="0x6650" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6164">
+    <title>99  Internal DME Fault</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="99  Internal DME Fault" address="0xF626" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4E1C">
+    <title>100  Tyre Pressure Front Left</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="100  Tyre Pressure Front Left" address="0x63B0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x43C6">
+    <title>101  Tyre Pressure Front Right</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="101  Tyre Pressure Front Righ" address="0x63BE" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5BF6">
+    <title>102  Tyre Pressure Rear Right</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="102  Tyre Pressure Rear Right" address="0x63CC" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x652F">
+    <title>103  Tyre Pressure Rear Left</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="103  Tyre Pressure Rear Left" address="0x63DA" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1931">
+    <title>105  Engine Coolant Temperature Implausible</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="105  Engine Coolant Temperatu" address="0xF084" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x795F">
+    <title>106  Brake Light Switch</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="106  Brake Light Switch" address="0xF0CA" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7099">
+    <title>107  Electronic Throttle Self Test</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="107  Electronic Throttle Self" address="0xF228" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1703">
+    <title>108  Oil Circuit Changeover Valve Left</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="108  Oil Circuit Changeover V" address="0xF27C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1979">
+    <title>109  Oil Circuit Changeover Valve Right</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="109  Oil Circuit Changeover V" address="0xF28A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7449">
+    <title>110  Function Light Switch Vehicle Dynamics</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="110  Function Light Switch Ve" address="0x6180" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5F03">
+    <title>111  Throttle Pedal Position Sensor Comparison</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="111  Throttle Pedal Position " address="0xF308" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x29E4">
+    <title>112  Throttle Pedal Position Sensor Comparison</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="112  Throttle Pedal Position " address="0xF316" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3B08">
+    <title>113  Inlet VANOS Bank 2 Function</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="113  Inlet VANOS Bank 2 Funct" address="0xF324" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3257">
+    <title>114  Exhaust VANOS Bank 2 Function</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="114  Exhaust VANOS Bank 2 Fun" address="0xF332" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4B3C">
+    <title>115  Control Module Temperature or Tyre Pressure Control Button</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="115  Control Module Temperatu" address="0xF340" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x27AF">
+    <title>116  Servotronic Valve</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="116  Servotronic Valve" address="0xF34E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x36AC">
+    <title>117  Servotronic- Road speed Signal</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="117  Servotronic- Road speed " address="0xF35C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7644">
+    <title>118  Electronic Throttle Potentiometer Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="118  Electronic Throttle Pote" address="0xF36A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5846">
+    <title>119  Electronic Throttle Potentiometer Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="119  Electronic Throttle Pote" address="0xF378" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7B5D">
+    <title>120  Electronic Throttle Potentiometer Comparison</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="120  Electronic Throttle Pote" address="0xF386" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7BC8">
+    <title>121  Electronic Throttle Both Potentiometers Faulty</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="121  Electronic Throttle Both" address="0xF394" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6353">
+    <title>122  DME Internal Processor Check</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="122  DME Internal Processor C" address="0x6084" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x251E">
+    <title>123  No CAN-bus signal from SMG</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="123 No CAN-bus signal from SM" address="0x6102" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x77A0">
+    <title>124  CSL Intake Flap</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="124 CSL Intake Flap" address="0x6164" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6885">
+    <title>125  Oil Level Sensor Lamp</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="125  Oil Level Sensor Lamp" address="0x6172" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5054">
+    <title>126  Electric Fuel Pump Crash Deactivation</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="126  Electric Fuel Pump Crash" address="0x60A0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0xE87">
+    <title>127  DMTL Module</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="127  DMTL Module" address="0x618E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3F59">
+    <title>128  Deviation Idle Speed</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="128  Deviation Idle Speed" address="0xF3F6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x68D7">
+    <title>129  Cat Protection Function- Empty Tank or Low Fuel</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="129  Cat Protection Function-" address="0xF404" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2907">
+    <title>130  EWS 3.3 Anti Tampering Protection</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="130  EWS 3.3 Anti Tampering P" address="0x6022" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4E4C">
+    <title>131  DSC Intervention Implausible</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="131  DSC Intervention Implaus" address="0xF014" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6B6B">
+    <title>132  CAN Timeout DSC</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="132  CAN Timeout DSC" address="0xF022" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3B15">
+    <title>133  CAN Timeout Steering Angle Sensor</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="133  CAN Timeout Steering Ang" address="0xF030" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3A81">
+    <title>134  CAN Timeout Instrument Cluster</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="134  CAN Timeout Instrument C" address="0xF03E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5EB3">
+    <title>135  Road Speed Signal</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="135  Road Speed Signal" address="0xF04C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2B15">
+    <title>136  Idle Speed Control Function</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="136  Idle Speed Control Funct" address="0xF148" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3A9E">
+    <title>137  Suction-Jet Pump</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="137  Suction-Jet Pump" address="0xF164" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1FE1">
+    <title>138  Activation, Differential Lock</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="138  Activation, Differential" address="0xF172" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6F5C">
+    <title>139  Interruption Cruise Control Operation</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="139  Interruption Cruise Cont" address="0xF180" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7E7">
+    <title>140  Knock Control Deactivated/Knock Protection</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="140  Knock Control Deactivate" address="0xF18E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x129">
+    <title>141  Tank Fill Level Implausible</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="141  Tank Fill Level Implausi" address="0xF05A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1072">
+    <title>142  System check, suction jet pump for brake boosting</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="142 System check, suction jet" address="0xF068" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6710">
+    <title>143  E-box Fan</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="143  E-box Fan" address="0xF076" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5E89">
+    <title>144  Lambda Sensor Control Bank 1</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="144  Lambda Sensor Control Ba" address="0x60E6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0xB86">
+    <title>145  Lambda Sensor Control Bank 2</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="145  Lambda Sensor Control Ba" address="0x60F4" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2521">
+    <title>148  EWS 3.3 interface DME-EWS/Interface, electronic engine immobilizer</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="148 EWS 3.3 interface DME-EWS" address="0xF5E0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7482">
+    <title>149  Fuel Level</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="149  Fuel Level" address="0x65EE" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7552">
+    <title>150  DME Memory Fault</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="150  DME Memory Fault" address="0xF0BC" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x537">
+    <title>151  Internal DME Fault</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="151  Internal DME Fault" address="0x634E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x200B">
+    <title>154  Crankcase breather</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="154 Crankcase breather" address="0xF4D6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5E3D">
+    <title>155  Saving Adaptation Values not Possible</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="155  Saving Adaptation Values" address="0xF0AE" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3775">
+    <title>156  Saving Adaptation Values not Possible</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="156  Saving Adaptation Values" address="0x603E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x38DE">
+    <title>157  DME Memory Fault</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="157  DME Memory Fault" address="0x604C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4C95">
+    <title>158  Reset DME Over Speed</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="158  Reset DME Over Speed" address="0x6252" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x78D5">
+    <title>159  Internal DME Fault Knock Control</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="159  Internal DME Fault Knock" address="0xF19C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1427">
+    <title>160  Internal DME Fault Knock Control</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="160  Internal DME Fault Knock" address="0xF1AA" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0xF33">
+    <title>161  Internal DME Fault Knock Control</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="161  Internal DME Fault Knock" address="0xF1B8" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7F8C">
+    <title>162  Camshaft Sensor Bank 2 Synchronisation</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="162  Camshaft Sensor Bank 2 S" address="0xF1C6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3951">
+    <title>163  Reset DME Over Speed</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="163  Reset DME Over Speed" address="0xF1E2" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3B18">
+    <title>170  Aux Air Quantity too Low</title>
+    <description>DISABLE FOR SECONDARY AIR PUMP REMOVAL</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="170  Aux Air Quantity too Low" address="0xF3BE" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2702">
+    <title>171  Aux Air Valve Jammed</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="171  Aux Air Valve Jammed" address="0xF3CC" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x53D9">
+    <title>172  VANOS Admission Pressure Pump</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="172  VANOS Admission Pressure" address="0xF2EC" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x414">
+    <title>173  Continuous Signal Starter Switch</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="173  Continuous Signal Starte" address="0xF3E8" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1FB4">
+    <title>174  Fuel System Diagnosis Bank 1</title>
+    <description>DISABLE FOR CATALYST DELETE</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="174 Fuel System Diagnosis Ban" address="0x626E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6E25">
+    <title>175  Fuel System Diagnosis Bank 2</title>
+    <description>DISABLE FOR CATALYST DELETE</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="175 Fuel System Diagnosis Ban" address="0x627C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2810">
+    <title>176  Abort Tank Leak Diagnosis due to Moisturem</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="176  Abort Tank Leak Diagnosi" address="0x628A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x21D">
+    <title>177  MIL Command from SMGII Error</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="177  MIL Command from SMGII E" address="0x6298" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x164A">
+    <title>178  Catalytic Converter Efficiency Bank 1</title>
+    <description>DISABLE FOR CATALYST DELETE</description>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="178 Catalytic Converter Effic" address="0x62A6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4335">
+    <title>179  Catalytic Converter Efficiency Bank 2</title>
+    <description>DISABLE FOR CATALYST DELETE</description>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="179 Catalytic Converter Effic" address="0x62B4" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7809">
+    <title>180  Tank Leak Detected</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="180  Tank Leak Detected" address="0x62C2" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4CD5">
+    <title>181  Fuel Filler Cap Open</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFPATCHENTRY name="181  Fuel Filler Cap Open" address="0x62D0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4259">
+    <title>182  Internal DME Fault</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="182  Internal DME Fault" address="0x6394" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4B86">
+    <title>183  Internal DME Fault</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="183  Internal DME Fault" address="0x63A2" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7524">
+    <title>184  Inlet VANOS Bank 1 Function</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="184  Inlet VANOS Bank 1 Funct" address="0x63E8" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5316">
+    <title>185  Exhaust VANOS Bank 1 Function</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="185  Exhaust VANOS Bank 1 Fun" address="0x63F6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2D8B">
+    <title>194  Electronic Throttle Limp Mode from Cruise Control</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="194  Electronic Throttle Limp" address="0x6474" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x33EE">
+    <title>195  Deviation Setpoint Torque from Actual Torque</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="195  Deviation Setpoint Torqu" address="0xF49E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1D05">
+    <title>196  Misfire Cyl 1 with Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="196  Misfire Cyl 1 with Cyl C" address="0x6490" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x641F">
+    <title>197  Misfire Cyl 2 with Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="197  Misfire Cyl 2 with Cyl C" address="0x649E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x53AE">
+    <title>198  Misfire Cyl 3 with Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="198  Misfire Cyl 3 with Cyl C" address="0x64AC" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5D0D">
+    <title>199  Misfire Cyl 4 with Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="199  Misfire Cyl 4 with Cyl C" address="0x64BA" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3C47">
+    <title>200  Misfire Cyl 5 with Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="200  Misfire Cyl 5 with Cyl C" address="0x64C8" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x34BC">
+    <title>201  Misfire Cyl 6 with Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="201  Misfire Cyl 6 with Cyl C" address="0x64D6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x53E">
+    <title>202  Misfire Cyl 7 with Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="202  Misfire Cyl 7 with Cyl C" address="0x64E4" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6A34">
+    <title>203  Misfire Cyl 8 with Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="203  Misfire Cyl 8 with Cyl C" address="0x64F2" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4377">
+    <title>204  Misfire Multiple Cylinders with Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="204  Misfire Multiple Cylinde" address="0x6500" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7DA1">
+    <title>205  Misfire Cyl 1 without Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="205  Misfire Cyl 1 without Cy" address="0x650E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x1D88">
+    <title>206  Misfire Cyl 2 without Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="206  Misfire Cyl 2 without Cy" address="0x651C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7369">
+    <title>207  Misfire Cyl 3 without Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="207  Misfire Cyl 3 without Cy" address="0x652A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x28C4">
+    <title>208  Misfire Cyl 4 without Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="208  Misfire Cyl 4 without Cy" address="0x6538" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x7847">
+    <title>209  Misfire Cyl 5 without Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="209  Misfire Cyl 5 without Cy" address="0x6546" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2AF">
+    <title>210  Misfire Cyl 6 without Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="210  Misfire Cyl 6 without Cy" address="0x6554" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2BBF">
+    <title>211  Misfire Cyl 7 without Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="211  Misfire Cyl 7 without Cy" address="0x6562" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5F66">
+    <title>212  Misfire Cyl 8 without Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="212  Misfire Cyl 8 without Cy" address="0x6570" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5B7B">
+    <title>213  Misfire Multiple Cylinders without Cyl Cutout</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="213  Misfire Multiple Cylinde" address="0x657E" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5929">
+    <title>214  Lambda Sensor Pre Cat Bank 1 Period Duration</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="214  Lambda Sensor Pre Cat Ba" address="0x658C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2F64">
+    <title>215  Lambda Sensor Pre Cat Bank 2 Period Duration</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="215  Lambda Sensor Pre Cat Ba" address="0x659A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x5BE0">
+    <title>216  Lambda Sensor Pre Cat Bank 1 Flip Time</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="216  Lambda Sensor Pre Cat Ba" address="0x65A8" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x13E7">
+    <title>217  Lambda Sensor Pre Cat Bank 2 Flip Time</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="217  Lambda Sensor Pre Cat Ba" address="0x65B6" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3D51">
+    <title>218  Lambda Sensor Pre Cat Bank 1 Signal Excursion</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="218  Lambda Sensor Pre Cat Ba" address="0x65C4" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x2476">
+    <title>219  Lambda Sensor Pre Cat Bank 2 Signal Excursion</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="219  Lambda Sensor Pre Cat Ba" address="0x65D2" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0xD0E">
+    <title>220  DME Internal Processor Check</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="220  DME Internal Processor C" address="0x65E0" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6F28">
+    <title>221  System test, crankcase breather</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="221 System test, crankcase br" address="0xF4E4" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3FCD">
+    <title>222  No CAN-bus signal from supplementary control module</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="222 No CAN-bus signal from su" address="0xF412" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6A29">
+    <title>223  Charge-Air Pressure Sensor</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="223 Charge-Air Pressure Senso" address="0xF420" datasize="0xE" patchdata="DFA0A004010104000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x3022">
+    <title>225  Outside temperature from instrument cluster implausible</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="225 Outside temperature from " address="0xF43C" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x369C">
+    <title>226  Time value from instrument cluster implausible</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="226 Time value from instrumen" address="0xF44A" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x56F">
+    <title>227  ??? Activation, battery disconnecting switch</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="227 ??? Activation, battery d" address="0xF458" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0xEE">
+    <title>228  Electronic Throttle Limit Violation</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="228  Electronic Throttle Limi" address="0xF466" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x6F36">
+    <title>229  Electric throttle: control deviation</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="229 Electric throttle: contro" address="0xF474" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0xA4D">
+    <title>230  Electronic Throttle Setpoint/Actual Value Deviation</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="230  Electronic Throttle Setp" address="0xF482" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x58FA">
+    <title>231  DME Internal Processor Check</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="231  DME Internal Processor C" address="0xF490" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x76B0">
+    <title>232  Tank Vent Valve Function Check</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="232  Tank Vent Valve Function" address="0x6482" datasize="0xE" patchdata="00282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFPATCH uniqueid="0x4AE2">
+    <title>247  VANOS Pressure Accumulator Valve</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFPATCHENTRY name="247  VANOS Pressure Accumulat" address="0x667A" datasize="0xE" patchdata="E9282803020302000102032800FF" />
+  </XDFPATCH>
+  <XDFTABLE uniqueid="0x278C" flags="0x0">
+    <title>Software Version</title>
+    <description>Software Version&#013;&#010;DO NOT EDIT</description>
+    <CATEGORYMEM index="0" category="2" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0xBFB8" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <outputtype>4</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0xBFB8" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>4</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+</XDFFORMAT>
