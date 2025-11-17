@@ -2,7 +2,8 @@
 
 A Python tool for restoring checksums in MSS54/MSS54HP ECU binary files after modifications, preserving the original CVN through intelligent compensation.
 
-> **⚠️ IMPORTANT:** This tool is designed and tested for **32KB partial flash binaries only**. Use on full 512KB binaries is **UNTESTED** and **NOT RECOMMENDED**.
+> **✅ SUPPORTED:** This tool supports both **MSS54 (32KB)** and **MSS54HP (64KB)** partial flash binaries.
+> **⚠️ IMPORTANT:** Full 512KB binaries are **NOT SUPPORTED**. Extract the partial flash first.
 
 ## Table of Contents
 
@@ -62,16 +63,18 @@ This tool solves **BOTH** problems through **checksum compensation**:
 └─────────────────────────────────────────────────┘
 ```
 
-**✅ EPROM checksums preserved** → ECU accepts file  
+**✅ EPROM checksums preserved** → ECU accepts file
 **✅ CVN preserved** → Scanner shows original value (invisible modification!)
 
 ---
 
 ## Installation
 
-**Requirements:** 
+**Requirements:**
 - Python 3.6 or later (no external dependencies)
-- **32KB partial flash binary** (full 512KB binaries are not supported)
+- **MSS54:** 32KB partial flash binary (part numbers 211322xxx)
+- **MSS54HP:** 64KB partial flash binary (part numbers 211323xxx, 211325xxx)
+- Full 512KB binaries are not supported
 
 That's it! No installation needed.
 
@@ -373,9 +376,9 @@ For each segment:
 ./checksum_compensator.py original.bin --info --show-zeros > zero_areas.txt
 
 # Tip 2: Quick validation of multiple files
-for f in *.bin; do 
-  echo "$f:"; 
-  ./checksum_compensator.py "$f" --info | grep Status; 
+for f in *.bin; do
+  echo "$f:";
+  ./checksum_compensator.py "$f" --info | grep Status;
 done
 
 # Tip 3: Compare original vs modified
@@ -490,7 +493,7 @@ Restore Checksums:
 
 Update Checksums:
   --fix-checksums         Recalculate and update stored checksums
-  
+
 Output:
   --output, -o FILE       Output file path
 ```
@@ -568,20 +571,24 @@ def crc16(data: bytes) -> int:
 
 **MSS54 Standard (32KB Partial - SUPPORTED):**
 - Part numbers: 211322xxxxxx
-- File size: 32,768 bytes
-- Slave calibration: 0x0000-0x3FFF
-- Master program: 0x4000-0x7FFF
+- File size: 32,768 bytes (32KB)
+- Structure: Slave (0x0000-0x3FFF) + Master (0x4000-0x7FFF)
+- CRC locations: 0x3FFC, 0x7FFC
+- Algorithm: CRC16 with 0xF0 prefix
 
-**MSS54HP High Pressure (32KB Partial - SUPPORTED):**
-- Part numbers: 211323xxxxxx, 211325xxxxxx
-- File size: 32,768 bytes
-- Same structure as MSS54, different internal calibration layout
+**MSS54HP High Pressure (64KB Partial - SUPPORTED):**
+- Part numbers: 211323xxxxxx (E46 M3), 211325xxxxxx (CSL)
+- File size: 65,536 bytes (64KB)
+- Structure: 4 segments (0x0000-0x3FFF, 0x4000-0x7FFF, 0x8000-0xBFFF, 0xC000-0xFFFF)
+- CRC locations: 0x3FFC, 0xBFFC
+- Algorithm: CRC16 with **swapped segments** (Seg1+2, Seg3+4), **no prefix**
+- **Important:** MSS54HP uses different checksum calculation - segments are reordered before CRC
 
 **⚠️ Full Binaries (512KB - NOT SUPPORTED):**
 - File size: 524,288 bytes (512KB)
 - Contains additional bootloader and redundant data
 - This tool is UNTESTED on full binaries - use at own risk
-- Extract 32KB partial from full binary if needed
+- Extract partial from full binary if needed (see ../scripts/full2partial.py)
 
 ---
 
@@ -703,7 +710,7 @@ This tool is provided **as-is** for **educational and personal use only**. The a
 ### Credits
 
 - **Original checksum.pl:** p0lar @ m3forum.net
-- **Python implementation:** Based on Perl script methodology  
+- **Python implementation:** Based on Perl script methodology
 - **CRC16 algorithm:** Standard CRC-16-MODBUS
 - **Testing & validation:** MSS54 community
 
